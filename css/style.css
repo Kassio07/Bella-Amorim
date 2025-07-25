@@ -1,5 +1,34 @@
+@import url("../assets/_hiro.scss");
+@import url("../assets/_fonts.scss");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "";
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

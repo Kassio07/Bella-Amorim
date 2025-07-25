@@ -6,5 +6,32 @@
 }
 
 // Arquivos de import
+@import url('../assets/_hiro.scss');
+@import url('../assets/_fonts.scss');
 
+
+// Scroll da página
+html{
+ scroll-behavior: smooth;
+}
+
+// Reset
+body{
+ font-family: '';
+ overflow-x: hidden;
+}
+p{
+ font-size: 1rem;
+}
+a{
+ text-decoration: none;
+ cursor: pointer;
+}
+button{
+ border: 0;
+ cursor: pointer;
+}
+li{
+ list-style: none;
+}
 
