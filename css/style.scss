@@ -6,8 +6,10 @@
 }
 
 // Arquivos de import
-@import url('../assets/_hiro.scss');
-@import url('../assets/_fonts.scss');
+@import '../assets/_color';
+@import '../assets/_mediaQuerys';
+@import '../assets/_fonts';
+@import '../assets/_hiro';
 
 
 // Scroll da página
@@ -17,7 +19,8 @@ html{
 
 // Reset
 body{
- font-family: '';
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 400;
  overflow-x: hidden;
 }
 p{
@@ -34,8 +37,10 @@ button{
 li{
  list-style: none;
 }
-
-// width geral da página
-.container{
- 
+img{
+ width: 100%;
+ height: auto;
+ display: block;
 }
+
+
