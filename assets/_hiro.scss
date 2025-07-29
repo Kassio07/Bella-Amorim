@@ -6,15 +6,24 @@ header {
   background-image: url("../images/imagem-hiro-fundo.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
 
   .logoTopo {
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+
+    top: 0;
     img {
       width: 60px;
-      padding: 10px 0;
+    }
+    .destaqueHiro-fundo{
+     background-color: $Pale-Pink;
+     display: none;
     }
   }
   .hiro-content {
@@ -32,7 +41,7 @@ header {
       flex: 1;
       p {
         font-weight: 500;
-        line-height: 25px;
+        line-height: 25px; 
       }
       > span {
         font-size: 16px;
