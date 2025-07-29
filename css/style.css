@@ -43,7 +43,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   background-image: url("../images/imagem-hiro-fundo.jpg");
   background-size: cover;
   background-position: center;
@@ -98,7 +98,7 @@ header .hiro-content .hiro-img img {
   align-self: center;
   width: 100%;
   position: relative;
-  top: -114px;
+  top: -94px;
 }
 
 #hiro {
@@ -178,7 +178,7 @@ section {
     font-size: 12px;
   }
   header .hiro-content .hiro-img {
-    width: 100%;
+    width: 85%;
     position: relative;
   }
 }
