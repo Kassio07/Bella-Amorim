@@ -1,22 +1,281 @@
-@import url("../assets/_hiro.scss");
-@import url("../assets/_fonts.scss");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-image: url("../images/imagem-hiro-fundo.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+header .logoTopo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .logoTopo img {
+  width: 60px;
+  padding: 10px 0;
+}
+header .hiro-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+}
+header .hiro-content h1 {
+  margin-bottom: 20px;
+}
+header .hiro-content .hiro-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+header .hiro-content .hiro-text p {
+  font-weight: 500;
+  line-height: 25px;
+}
+header .hiro-content .hiro-text > span {
+  font-size: 16px;
+}
+header .hiro-content .hiro-img {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+header .hiro-content .hiro-img img {
+  align-self: flex-end;
+  width: 100%;
+}
+
+#hiro {
+  background-color: #FEF9F1;
+}
+
+.destaqueXG {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  color: #E28D8A;
+  font-weight: 700;
+}
+
+.destaqueG {
+  font-family: "Quicksand", sans-serif;
+  font-size: 28px;
+  color: #FADBE3;
+  font-weight: 700;
+}
+
+.destaqueTitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22x;
+  color: #003C1A;
+  font-weight: 700;
+}
+
+.green {
+  color: #003C1A;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0 18px;
+  }
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: #E28D8A;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 26px;
+    color: #FADBE3;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: #003C1A;
+    font-weight: 700;
+  }
+  header .hiro-content {
+    flex-direction: column;
+    padding-top: 120px;
+    gap: 50px;
+  }
+  header .hiro-content .hiro-img {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 24px;
+  }
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    color: #E28D8A;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: #FADBE3;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    color: #003C1A;
+    font-weight: 700;
+  }
+  header {
+    height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 16px;
+  }
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 38px;
+    color: #E28D8A;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    color: #FADBE3;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: #003C1A;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 30px;
+  }
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    color: #E28D8A;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 36px;
+    color: #FADBE3;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: #003C1A;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    padding: 0 40px;
+  }
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 48px;
+    color: #E28D8A;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    color: #FADBE3;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    color: #003C1A;
+    font-weight: 700;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "";
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
 p {
   font-size: 1rem;
+  color: rgb(80, 78, 78);
 }
 
 a {
@@ -31,4 +290,18 @@ button {
 
 li {
   list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 575px) {
+  p {
+    font-size: 14px;
+    line-height: 20px !important;
+    color: rgb(80, 78, 78);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,1 @@
-"user strict";
-
-alert('ok');
+"use strict";

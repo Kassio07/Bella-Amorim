@@ -1,46 +1,53 @@
 // Reset global
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // Arquivos de import
-@import '../assets/_color';
-@import '../assets/_mediaQuerys';
-@import '../assets/_fonts';
-@import '../assets/_hiro';
-
+@import "../assets/_color";
+@import "../assets/_fonts";
+@import "../assets/_hiro";
+@import "../assets/destaque";
+@import "../assets/_mediaQuerys";
 
 // Scroll da página
-html{
- scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 // Reset
-body{
- font-family: 'Quicksand', sans-serif;
- font-weight: 400;
- overflow-x: hidden;
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
 }
-p{
- font-size: 1rem;
+p {
+  font-size: 1rem;
+  color: rgb(80, 78, 78);
 }
-a{
- text-decoration: none;
- cursor: pointer;
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
-button{
- border: 0;
- cursor: pointer;
+button {
+  border: 0;
+  cursor: pointer;
 }
-li{
- list-style: none;
+li {
+  list-style: none;
 }
-img{
- width: 100%;
- height: auto;
- display: block;
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-
+@media (max-width: 575px) {
+  p {
+    font-size: 14px;
+    line-height: 20px !important;
+    color: rgb(80, 78, 78);
+  }
+}

@@ -1,44 +1,154 @@
-
-section{
- padding: 80px 0;
+section {
+  padding: 80px 0;
 }
-
 
 // Medias Querys
-.container{
- width: 100%;
- max-width: 100%;
- padding: 0 16px;
- margin: 0 auto;
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
-@media(min-width: 576px){
- .container{
-  max-width: 540px;
-  padding: 0 18px;
- }
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0 18px;
+  }
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: $Salmon;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 26px;
+    color: $Pale-Pink;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    color: $dark-green;
+    font-weight: 700;
+  }
+  header {
+    .hiro-content {
+      flex-direction: column;
+      padding-top: 120px;
+      gap: 50px;
+
+      .hiro-img{
+       width: 75%;
+      }
+    }
+  }
 }
-@media(min-width: 768px){
- .container{
-  max-width: 720px;
-  padding: 0 24px;
- }
+
+@media(min-width:576px) and (max-width:768px){
+
 }
-@media(min-width: 992px){
- .container{
-  max-width: 960px;
-  padding: 0 16px;
- }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 24px;
+  }
+
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    color: $Salmon;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: $Pale-Pink;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    color: $dark-green;
+    font-weight: 700;
+  }
+    header {
+    height: 100vh; 
+  }
 }
-@media(min-width: 1200px){
- .container{
-  max-width: 1140px;
-  padding: 0 30px;
- }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 16px;
+  }
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 38px;
+    color: $Salmon;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    color: $Pale-Pink;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: $dark-green;
+    font-weight: 700;
+  }
 }
-@media(min-width: 1400px){
- .container{
-  max-width: 1320px;
-  padding: 0 40px;
- }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 30px;
+  }
+
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    color: $Salmon;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 36px;
+    color: $Pale-Pink;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: $dark-green;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    padding: 0 40px;
+  }
+
+  .destaqueXG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 48px;
+    color: $Salmon;
+    font-weight: 700;
+  }
+  .destaqueG {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    color: $Pale-Pink;
+    font-weight: 700;
+  }
+  .destaqueTitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 32px;
+    color: $dark-green;
+    font-weight: 700;
+  }
 }
