@@ -169,7 +169,7 @@ section {
   }
   header .hiro-content {
     flex-direction: column;
-    gap: 50px;
+    gap: 130px;
   }
   header .hiro-content .hiro-text {
     justify-content: center;
