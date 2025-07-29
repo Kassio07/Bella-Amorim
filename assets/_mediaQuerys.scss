@@ -5,9 +5,16 @@ section {
 // Medias Querys
 .container {
   width: 100%;
-  max-width: 100%;
   padding: 0 16px;
   margin: 0 auto;
+}
+
+
+.destaqueXG,
+.destaqueG,
+.destaqueTitle{
+ font-family: "Quicksand", sans-serif;
+ font-weight: 700;
 }
 
 @media (max-width: 576px) {
@@ -16,22 +23,16 @@ section {
     padding: 0 18px;
   }
   .destaqueXG {
-    font-family: "Quicksand", sans-serif;
     font-size: 28px;
     color: $Salmon;
-    font-weight: 700;
   }
   .destaqueG {
-    font-family: "Quicksand", sans-serif;
     font-size: 26px;
     color: $Pale-Pink;
-    font-weight: 700;
   }
   .destaqueTitle {
-    font-family: "Quicksand", sans-serif;
     font-size: 16px;
     color: $dark-green;
-    font-weight: 700;
   }
   header {
     .hiro-content {
@@ -46,10 +47,6 @@ section {
   }
 }
 
-@media(min-width:576px) and (max-width:768px){
-
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -57,22 +54,16 @@ section {
   }
 
   .destaqueXG {
-    font-family: "Quicksand", sans-serif;
     font-size: 32px;
     color: $Salmon;
-    font-weight: 700;
   }
   .destaqueG {
-    font-family: "Quicksand", sans-serif;
     font-size: 28px;
     color: $Pale-Pink;
-    font-weight: 700;
   }
   .destaqueTitle {
-    font-family: "Quicksand", sans-serif;
     font-size: 18px;
     color: $dark-green;
-    font-weight: 700;
   }
     header {
     height: 100vh; 
@@ -84,22 +75,16 @@ section {
     padding: 0 16px;
   }
   .destaqueXG {
-    font-family: "Quicksand", sans-serif;
     font-size: 38px;
     color: $Salmon;
-    font-weight: 700;
   }
   .destaqueG {
-    font-family: "Quicksand", sans-serif;
     font-size: 32px;
     color: $Pale-Pink;
-    font-weight: 700;
   }
   .destaqueTitle {
-    font-family: "Quicksand", sans-serif;
     font-size: 28px;
     color: $dark-green;
-    font-weight: 700;
   }
 }
 @media (min-width: 1200px) {
@@ -109,22 +94,16 @@ section {
   }
 
   .destaqueXG {
-    font-family: "Quicksand", sans-serif;
     font-size: 40px;
     color: $Salmon;
-    font-weight: 700;
   }
   .destaqueG {
-    font-family: "Quicksand", sans-serif;
     font-size: 36px;
     color: $Pale-Pink;
-    font-weight: 700;
   }
   .destaqueTitle {
-    font-family: "Quicksand", sans-serif;
     font-size: 28px;
     color: $dark-green;
-    font-weight: 700;
   }
 }
 @media (min-width: 1400px) {
@@ -134,21 +113,15 @@ section {
   }
 
   .destaqueXG {
-    font-family: "Quicksand", sans-serif;
     font-size: 48px;
     color: $Salmon;
-    font-weight: 700;
   }
   .destaqueG {
-    font-family: "Quicksand", sans-serif;
     font-size: 40px;
     color: $Pale-Pink;
-    font-weight: 700;
   }
   .destaqueTitle {
-    font-family: "Quicksand", sans-serif;
     font-size: 32px;
     color: $dark-green;
-    font-weight: 700;
   }
 }
