@@ -45,18 +45,16 @@ header {
   align-items: center;
   gap: 50px;
   background-image: url("../images/imagem-hiro-fundo.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  overflow: hidden;
 }
 header .logoTopo {
-  position: fixed;
   width: 100vw;
-  height: 100px;
   display: flex;
   justify-content: center;
-  top: 0;
 }
 header .logoTopo img {
   width: 60px;
@@ -78,7 +76,9 @@ header .hiro-content h1 {
 header .hiro-content .hiro-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
+  height: 100%;
 }
 header .hiro-content .hiro-text p {
   font-weight: 500;
@@ -95,12 +95,14 @@ header .hiro-content .hiro-img {
   justify-content: end;
 }
 header .hiro-content .hiro-img img {
-  align-self: flex-end;
+  align-self: center;
   width: 100%;
+  position: relative;
+  top: -114px;
 }
 
 #hiro {
-  background-color: #FEF9F1;
+  background-color: #fef9f1;
 }
 
 .destaqueXG {
@@ -163,20 +165,29 @@ section {
     color: #003C1A;
   }
   header {
-    padding-top: 100px;
+    height: 100vh;
   }
   header .hiro-content {
     flex-direction: column;
     gap: 50px;
   }
   header .hiro-content .hiro-text {
-    padding-top: 40px;
+    justify-content: center;
   }
   header .hiro-content .hiro-text > span {
     font-size: 12px;
   }
   header .hiro-content .hiro-img {
     width: 100%;
+    position: relative;
+  }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+  header .hiro-content {
+    flex-direction: column;
+  }
+  header .hiro-content .hiro-img img {
+    width: 77%;
   }
 }
 @media (min-width: 768px) {

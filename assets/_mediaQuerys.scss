@@ -35,23 +35,43 @@ section {
     color: $dark-green;
   }
   header {
-   padding-top: 100px;
+   height: 100vh;
     .hiro-content {
       flex-direction: column;
-      // padding-top: 120px;
       gap: 50px;
       .hiro-text{
-       padding-top: 40px;
+       // padding-top: 40px;
+       justify-content: center;
        >span{
         font-size: 12px;
        }
       }
       .hiro-img{
-       width: 100%;
+       width: 100%; 
+       position: relative;
       }
     }
   }
 }
+
+
+@media (min-width:577px) and (max-width: 767px){
+ header{
+
+  .hiro-content{
+   flex-direction: column;
+
+   .hiro-img{
+
+    img{
+     width: 77%;
+    }
+   }
+  }
+ }
+}
+
+
 
 @media (min-width: 768px) {
   .container {

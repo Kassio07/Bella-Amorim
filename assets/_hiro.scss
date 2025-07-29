@@ -4,26 +4,22 @@ header {
   align-items: center;
   gap: 50px;
   background-image: url("../images/imagem-hiro-fundo.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  overflow: hidden;
 
   .logoTopo {
-    position: fixed;
     width: 100vw;
-    height: 100px;
     display: flex;
     justify-content: center;
-    
-
-    top: 0;
     img {
       width: 60px;
     }
-    .destaqueHiro-fundo{
-     background-color: $Pale-Pink;
-     display: none;
+    .destaqueHiro-fundo {
+      background-color: $Pale-Pink;
+      display: none;
     }
   }
   .hiro-content {
@@ -38,10 +34,12 @@ header {
     .hiro-text {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       flex: 1;
+      height: 100%;
       p {
         font-weight: 500;
-        line-height: 25px; 
+        line-height: 25px;
       }
       > span {
         font-size: 16px;
@@ -56,13 +54,14 @@ header {
       flex-direction: column;
       justify-content: end;
       img {
-        align-self: flex-end;
+        align-self: center;
         width: 100%;
+        position: relative;
+        top: -114px;
       }
     }
   }
 }
-#hiro{
-  background-color: #FEF9F1;
-
+#hiro {
+  background-color: #fef9f1;
 }
