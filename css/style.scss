@@ -10,6 +10,7 @@
 @import "../scss/_fonts";
 @import "../scss/_hiro";
 @import "../scss/destaque";
+@import "../scss/about";
 @import "../scss/_mediaQuerys";
 @import "../scss/componente";
 
@@ -27,6 +28,8 @@ body {
 p {
   font-size: 1rem;
   color: rgb(80, 78, 78);
+  font-weight: 500;
+  
 }
 a {
   text-decoration: none;

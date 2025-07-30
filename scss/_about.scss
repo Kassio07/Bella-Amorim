@@ -1,0 +1,65 @@
+.about-content{
+ display: flex;
+ flex-direction: column;
+ padding: 70px 0;
+
+ .about-img{
+  margin-bottom: 30px;
+ }
+
+ .about-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  h2{
+   padding-top: 30px;
+  }
+ 
+  p{
+   color: rgb(80, 78, 78);
+   font-weight: 500;
+  }
+
+  .about-services{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+
+   ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-top: 20px;
+    li{
+     color: $dark-green;
+     font-weight: 500;
+
+     i{
+      margin-right:5px;
+      font-size: 1.3rem;
+     }
+    }
+   }
+
+   .btn-about{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    >a{
+     background-color: $Dusty-Rose;
+     color: $white;
+     transition: all 0.5s;
+    }
+
+    &>:hover{
+     background-color:#8f5959;
+    }
+   }
+  }
+
+ }
+}
