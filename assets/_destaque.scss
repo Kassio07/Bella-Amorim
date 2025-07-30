@@ -1,20 +1,23 @@
-.destaqueXG{
- font-family: "Quicksand", sans-serif;
- font-size: 32px;
- color: $Salmon;
- font-weight: 700;
-}
-.destaqueG{
- font-family: "Quicksand", sans-serif;
- font-size: 28px;
- color: $Pale-Pink;
- font-weight: 700;
-}
+
+.destaqueXG,
+.destaqueG,
 .destaqueTitle{
  font-family: "Quicksand", sans-serif;
+ font-weight: 700;
+}
+
+
+.destaqueXG{
+ font-size: 32px;
+ color: $Salmon;
+}
+.destaqueG{
+ font-size: 28px;
+ color: $Pale-Pink;
+}
+.destaqueTitle{
  font-size: 22x;
  color: $dark-green;
- font-weight: 700;
 }
 
 .green{

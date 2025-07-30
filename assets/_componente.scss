@@ -1,0 +1,23 @@
+.division{
+ background-image: url("../images/divisor-seccao.jpg");
+ background-size: cover;
+ width: 100vw;
+ height: 150px;
+
+ .content-division{
+
+  .division-col-1{
+
+   span{
+    color: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+   }
+
+   p{
+    color: $Pale-Pink;
+    text-transform: uppercase;
+   }
+  }
+ }
+}

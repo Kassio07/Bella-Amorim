@@ -105,25 +105,26 @@ header .hiro-content .hiro-img img {
   background-color: #fef9f1;
 }
 
-.destaqueXG {
+.destaqueXG,
+.destaqueG,
+.destaqueTitle {
   font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.destaqueXG {
   font-size: 32px;
   color: #E28D8A;
-  font-weight: 700;
 }
 
 .destaqueG {
-  font-family: "Quicksand", sans-serif;
   font-size: 28px;
   color: #FADBE3;
-  font-weight: 700;
 }
 
 .destaqueTitle {
-  font-family: "Quicksand", sans-serif;
   font-size: 22x;
   color: #003C1A;
-  font-weight: 700;
 }
 
 .green {
@@ -265,6 +266,22 @@ section {
     color: #003C1A;
   }
 }
+.division {
+  background-image: url("../images/divisor-seccao.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 150px;
+}
+.division .content-division .division-col-1 span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.division .content-division .division-col-1 p {
+  color: #FADBE3;
+  text-transform: uppercase;
+}
+
 html {
   scroll-behavior: smooth;
 }
