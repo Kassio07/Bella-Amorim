@@ -170,6 +170,7 @@ header .hiro-content .hiro-img img {
 .about-content .about-text .about-services ul li {
   color: #003C1A;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 .about-content .about-text .about-services ul li i {
   margin-right: 5px;
@@ -382,7 +383,7 @@ section {
   padding: 12px 30px;
   background-color: #FADBE3;
   width: 100%;
-  max-width: 280px;
+  max-width: 350px;
   min-width: 250px;
   border-radius: 5px;
   display: flex;
