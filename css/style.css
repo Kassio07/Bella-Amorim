@@ -457,12 +457,4 @@ img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-@media (max-width: 575px) {
-  p {
-    font-size: 14px;
-    line-height: 20px !important;
-    color: rgb(80, 78, 78);
-  }
 }/*# sourceMappingURL=style.css.map */
