@@ -2,28 +2,27 @@ section {
   padding: 80px 0;
 }
 
-// Medias Querys
 .container {
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
 }
 
-
 .destaqueXG,
 .destaqueG,
-.destaqueTitle{
- font-family: "Quicksand", sans-serif;
- font-weight: 700;
+.destaqueTitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 
+// Medias Querys
 @media (max-width: 576px) {
   .container {
     max-width: 540px;
     padding: 0 18px;
   }
   .destaqueXG {
-    font-size: 28px;
+    font-size: 32px;
     color: $Salmon;
   }
   .destaqueG {
@@ -35,43 +34,70 @@ section {
     color: $dark-green;
   }
   header {
-   height: 100vh;
+    height: 100vh;
     .hiro-content {
       flex-direction: column;
       gap: 130px;
-      .hiro-text{
-       // padding-top: 40px;
-       justify-content: center;
-       >span{
-        font-size: 12px;
-       }
+      .hiro-text {
+        // padding-top: 40px;
+        justify-content: center;
+        > span {
+          font-size: 12px;
+        }
       }
-      .hiro-img{
-       width: 85%; 
-       position: relative;
+      .hiro-img {
+        width: 85%;
+        position: relative;
+      }
+    }
+  }
+
+  .division {
+    .content-division {
+      gap: 18px;
+      text-align: center;
+      .division-col-1 {
+        p{
+          font-size: 28px;
+        }
+      }
+      .division-col-2 {
+        justify-content: center !important;
       }
     }
   }
 }
 
-
-@media (min-width:577px) and (max-width: 767px){
- header{
-
-  .hiro-content{
-   flex-direction: column;
-
-   .hiro-img{
-
-    img{
-     width: 77%;
-    }
-   }
+@media (min-width: 577px) and (max-width: 767px) {
+  .destaqueXG {
+    font-size: 30px;
+    color: $Salmon;
   }
- }
+  header {
+    .hiro-content {
+      flex-direction: column;
+
+      .hiro-img {
+        img {
+          width: 77%;
+        }
+      }
+    }
+  }
+
+  .division {
+    .content-division {
+      .division-col-1 {
+        span {
+          // font-size: 9px !important;
+        }
+      }
+
+      .division-col-2 {
+      }
+    }
+  }
 }
-
-
 
 @media (min-width: 768px) {
   .container {
@@ -91,8 +117,8 @@ section {
     font-size: 18px;
     color: $dark-green;
   }
-    header {
-    height: 100vh; 
+  header {
+    height: 100vh;
   }
 }
 @media (min-width: 992px) {

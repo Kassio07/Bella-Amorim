@@ -154,7 +154,7 @@ section {
     padding: 0 18px;
   }
   .destaqueXG {
-    font-size: 28px;
+    font-size: 32px;
     color: #E28D8A;
   }
   .destaqueG {
@@ -182,8 +182,22 @@ section {
     width: 85%;
     position: relative;
   }
+  .division .content-division {
+    gap: 18px;
+    text-align: center;
+  }
+  .division .content-division .division-col-1 p {
+    font-size: 28px;
+  }
+  .division .content-division .division-col-2 {
+    justify-content: center !important;
+  }
 }
 @media (min-width: 577px) and (max-width: 767px) {
+  .destaqueXG {
+    font-size: 30px;
+    color: #E28D8A;
+  }
   header .hiro-content {
     flex-direction: column;
   }
@@ -271,15 +285,60 @@ section {
   background-size: cover;
   width: 100vw;
   height: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.division .content-division {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.division .content-division .division-col-1 {
+  flex: 1.3;
+  line-height: 20px;
+  text-align: left;
 }
 .division .content-division .division-col-1 span {
   color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 9px;
 }
 .division .content-division .division-col-1 p {
   color: #FADBE3;
   text-transform: uppercase;
+}
+.division .content-division .division-col-2 {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-session {
+  padding: 12px 30px;
+  background-color: #FADBE3;
+  width: 100%;
+  max-width: 250px;
+  min-width: 200px;
+  border-radius: 5px;
+}
+.btn-session a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AC5E5E;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.btn-session a i {
+  font-size: 1.5rem;
+  padding-left: 5px;
 }
 
 html {
