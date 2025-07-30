@@ -324,8 +324,8 @@ section {
   padding: 12px 30px;
   background-color: #FADBE3;
   width: 100%;
-  max-width: 250px;
-  min-width: 200px;
+  max-width: 280px;
+  min-width: 250x;
   border-radius: 5px;
 }
 .btn-session a {
