@@ -80,6 +80,9 @@ header .hiro-content .hiro-text {
   flex: 1;
   height: 100%;
 }
+header .hiro-content .hiro-text h1 {
+  text-transform: uppercase;
+}
 header .hiro-content .hiro-text p {
   font-weight: 500;
   line-height: 25px;
@@ -154,7 +157,7 @@ section {
     padding: 0 18px;
   }
   .destaqueXG {
-    font-size: 32px;
+    font-size: 28px;
     color: #E28D8A;
   }
   .destaqueG {

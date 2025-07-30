@@ -37,6 +37,9 @@ header {
       justify-content: center;
       flex: 1;
       height: 100%;
+      h1{
+        text-transform: uppercase;
+      }
       p {
         font-weight: 500;
         line-height: 25px;

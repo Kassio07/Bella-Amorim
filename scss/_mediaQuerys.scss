@@ -22,7 +22,7 @@ section {
     padding: 0 18px;
   }
   .destaqueXG {
-    font-size: 32px;
+    font-size: 28px;
     color: $Salmon;
   }
   .destaqueG {
@@ -39,7 +39,6 @@ section {
       flex-direction: column;
       gap: 130px;
       .hiro-text {
-        // padding-top: 40px;
         justify-content: center;
         > span {
           font-size: 12px;
