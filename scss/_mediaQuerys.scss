@@ -33,6 +33,9 @@ section {
     font-size: 18px;
     color: $dark-green;
   }
+  p{
+    font-size: 1rem;
+  }
   header {
     height: 100vh;
     .hiro-content {
@@ -51,12 +54,20 @@ section {
     }
   }
 
+  .about-content {
+    .about-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   .division {
     .content-division {
       gap: 18px;
       text-align: center;
       .division-col-1 {
-        p{
+        p {
           font-size: 28px;
         }
       }
@@ -72,14 +83,33 @@ section {
     font-size: 30px;
     color: $Salmon;
   }
+  .destaqueTitle {
+    font-size: 28px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  .btn-session{
+    font-size: 1rem;
+  }
   header {
     .hiro-content {
       flex-direction: column;
 
       .hiro-img {
         img {
-          width: 77%;
+          width: 60%;
         }
+      }
+    }
+  }
+
+  .about-content {
+    .about-img {
+      img {
+        width: 60%;
       }
     }
   }
@@ -93,6 +123,8 @@ section {
       }
 
       .division-col-2 {
+        text-align: center;
+        justify-content: center;
       }
     }
   }
