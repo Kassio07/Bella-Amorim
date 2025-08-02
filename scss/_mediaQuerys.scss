@@ -22,18 +22,15 @@ section {
     padding: 0 18px;
   }
   .destaqueXG {
-    font-size: 28px;
     color: $Salmon;
   }
   .destaqueG {
-    font-size: 26px;
     color: $Pale-Pink;
   }
   .destaqueTitle {
-    font-size: 18px;
     color: $dark-green;
   }
-  p{
+  p {
     font-size: 1rem;
   }
   header {
@@ -46,6 +43,9 @@ section {
         > span {
           font-size: 12px;
         }
+        h1 {
+          font-size: 32px;
+        }
       }
       .hiro-img {
         width: 85%;
@@ -54,10 +54,24 @@ section {
     }
   }
 
-  .about-content {
-    .about-img {
-      img {
-        width: 100%;
+  .about {
+
+    .title-session{
+
+      >p{
+        font-size: 22px;
+      }
+    }
+    .about-content {
+      .about-img {
+        img {
+          width: 100%;
+        }
+      }
+      .about-text {
+        h2 {
+          font-size: 24px;
+        }
       }
     }
   }
@@ -67,12 +81,18 @@ section {
       gap: 18px;
       text-align: center;
       .division-col-1 {
+        line-height: 23px;
         p {
           font-size: 28px;
         }
       }
       .division-col-2 {
         justify-content: center !important;
+        .btn-session {
+          width: 80%;
+          padding: 5px 30px;
+          font-size: 14px;
+        }
       }
     }
   }
@@ -87,11 +107,11 @@ section {
     font-size: 28px;
   }
 
-  p{
+  p {
     font-size: 18px;
   }
 
-  .btn-session{
+  .btn-session {
     font-size: 1rem;
   }
   header {

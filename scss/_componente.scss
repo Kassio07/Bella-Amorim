@@ -1,94 +1,95 @@
 // Divisor das seções =========================================================
-.division{
- background-image: url("../images/divisor-seccao.jpg");
- background-size: cover;
- height: 150px;
+.division {
+  background-image: url("../images/divisor-seccao.jpg");
+  background-size: cover;
+  height: 150px;
 
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-between;
- align-items: center;
-
-
- .content-division{
-  width: 100%;
-  height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
-  .division-col-1{
-   flex: 1.3;
-   line-height: 20px;
-   text-align: left;
-   p{
-    color: $white;
-    text-transform: uppercase;
-    font-size: 9px;
-   }
+  justify-content: space-between;
+  align-items: center;
 
-   h3{
-    color: $Pale-Pink;
-    text-transform: uppercase;
-   }
+  .content-division {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    .division-col-1 {
+      flex: 1.3;
+      text-align: left;
+      p {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 9px;
+      }
+
+      h3 {
+        color: $Pale-Pink;
+        text-transform: uppercase;
+      }
+    }
+
+    .division-col-2 {
+      flex: 1;
+
+      display: flex;
+    }
   }
-
-  .division-col-2{
-   flex: 1;
-
-   display: flex;
-  }
- }
 }
 
 // Botão das seções ======================================================
-.btn-session{
- padding: 12px 30px;
- background-color: $Pale-Pink;
- width: 100%;
- max-width: 350px;
- min-width: 250px;
- border-radius: 5px;
+.btn-session {
+  padding: 12px 30px;
+  background-color: $Pale-Pink;
+  width: 100%;
+  max-width: 350px;
+  min-width: 250px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
 
   color: $Dusty-Rose;
   font-weight: 700;
 
-  i{
-   font-size: 1.5rem;
-   padding-left: 5px;
+  i {
+    font-size: 1.5rem;
+    padding-left: 5px;
+  }
+
+  &:hover {
+    background-color: #f6f2f3;
   }
 }
 
-
 // title seções  =======================================================
-.title-session{
- display: flex;
- flex-direction: row; 
- align-items: center;
- gap: 5px;
+.title-session {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 
- i{
-  color: $Dusty-Rose;
- }
- p{
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
-  color: $dark-green;
-  position: relative;
-  
- }
+  i {
+    color: $Dusty-Rose;
+  }
+  p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: $dark-green;
+    position: relative;
+  }
 
- &>p::before{
-  content: " ";
-  position: absolute;
-  bottom: -5px;
-  width: 100%;
-  height: 1px;
-  background-color: $Salmon;
-  border-radius: 15px;
- }
+  & > p::before {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: $Salmon;
+    border-radius: 15px;
+  }
 }

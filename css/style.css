@@ -188,15 +188,12 @@ section {
     padding: 0 18px;
   }
   .destaqueXG {
-    font-size: 28px;
     color: #E28D8A;
   }
   .destaqueG {
-    font-size: 26px;
     color: #FADBE3;
   }
   .destaqueTitle {
-    font-size: 18px;
     color: #003C1A;
   }
   p {
@@ -215,22 +212,39 @@ section {
   header .hiro-content .hiro-text > span {
     font-size: 12px;
   }
+  header .hiro-content .hiro-text h1 {
+    font-size: 32px;
+  }
   header .hiro-content .hiro-img {
     width: 85%;
     position: relative;
   }
-  .about-content .about-img img {
+  .about .title-session > p {
+    font-size: 22px;
+  }
+  .about .about-content .about-img img {
     width: 100%;
+  }
+  .about .about-content .about-text h2 {
+    font-size: 24px;
   }
   .division .content-division {
     gap: 18px;
     text-align: center;
+  }
+  .division .content-division .division-col-1 {
+    line-height: 23px;
   }
   .division .content-division .division-col-1 p {
     font-size: 28px;
   }
   .division .content-division .division-col-2 {
     justify-content: center !important;
+  }
+  .division .content-division .division-col-2 .btn-session {
+    width: 80%;
+    padding: 5px 30px;
+    font-size: 14px;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -356,7 +370,6 @@ section {
 }
 .division .content-division .division-col-1 {
   flex: 1.3;
-  line-height: 20px;
   text-align: left;
 }
 .division .content-division .division-col-1 p {
@@ -383,12 +396,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
   color: #AC5E5E;
   font-weight: 700;
 }
 .btn-session i {
   font-size: 1.5rem;
   padding-left: 5px;
+}
+.btn-session:hover {
+  background-color: #f6f2f3;
 }
 
 .title-session {
@@ -424,7 +441,6 @@ section {
 }
 
 .destaqueXG {
-  font-size: 32px;
   color: #E28D8A;
 }
 
@@ -434,7 +450,6 @@ section {
 }
 
 .destaqueTitle {
-  font-size: 22x;
   color: #003C1A;
 }
 
