@@ -163,7 +163,6 @@ section {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
     padding: 0 24px;
   }
   // Hiro
@@ -214,12 +213,17 @@ section {
       }
     }
     .about-content{
+      flex-direction: row;
+      gap: 25px;
       .about-img{
+        flex: 1;
         >img{
-        width: 60%;
+        width: 100%;
+        height: 500px;
         }
       }
       .about-text{
+        flex: 1;
         h2{
           font-size: 26px;
         }
