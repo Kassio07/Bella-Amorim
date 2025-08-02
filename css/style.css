@@ -85,7 +85,7 @@ header .hiro-content .hiro-text h1 {
 }
 header .hiro-content .hiro-text p {
   font-weight: 500;
-  line-height: 25px;
+  line-height: 20px;
 }
 header .hiro-content .hiro-text > span {
   font-size: 16px;
@@ -219,15 +219,6 @@ section {
     width: 85%;
     position: relative;
   }
-  .about .title-session > p {
-    font-size: 22px;
-  }
-  .about .about-content .about-img img {
-    width: 100%;
-  }
-  .about .about-content .about-text h2 {
-    font-size: 24px;
-  }
   .division .content-division {
     gap: 18px;
     text-align: center;
@@ -236,7 +227,10 @@ section {
     line-height: 23px;
   }
   .division .content-division .division-col-1 p {
-    font-size: 28px;
+    font-size: 9px;
+  }
+  .division .content-division .division-col-1 > h3 {
+    font-size: 22px;
   }
   .division .content-division .division-col-2 {
     justify-content: center !important;
@@ -245,6 +239,15 @@ section {
     width: 80%;
     padding: 5px 30px;
     font-size: 14px;
+  }
+  .about .title-session > p {
+    font-size: 22px;
+  }
+  .about .about-content .about-img img {
+    width: 100%;
+  }
+  .about .about-content .about-text h2 {
+    font-size: 24px;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -267,12 +270,18 @@ section {
   header .hiro-content .hiro-img img {
     width: 60%;
   }
-  .about-content .about-img img {
-    width: 60%;
+  .division .content-division .division-col-1 > p {
+    font-size: 11px;
+  }
+  .division .content-division .division-col-1 h3 {
+    font-size: 26px;
   }
   .division .content-division .division-col-2 {
     text-align: center;
     justify-content: center;
+  }
+  .about-content .about-img img {
+    width: 60%;
   }
 }
 @media (min-width: 768px) {
@@ -280,20 +289,43 @@ section {
     max-width: 720px;
     padding: 0 24px;
   }
-  .destaqueXG {
-    font-size: 32px;
-    color: #E28D8A;
-  }
-  .destaqueG {
-    font-size: 28px;
-    color: #FADBE3;
-  }
-  .destaqueTitle {
-    font-size: 18px;
-    color: #003C1A;
-  }
   header {
     height: 100vh;
+  }
+  header .hiro-content .hiro-text {
+    flex: 1;
+    justify-content: flex-start;
+  }
+  header .hiro-content .hiro-text > span {
+    font-size: 14px;
+  }
+  header .hiro-content .hiro-text > h1 {
+    font-size: 28px;
+  }
+  header .hiro-content .hiro-text > p {
+    font-size: 14px;
+    line-height: 20x;
+  }
+  header .hiro-content .hiro-img {
+    flex: 1;
+  }
+  .division .content-division .division-col-1 > p {
+    font-size: 11px;
+  }
+  .division .content-division .division-col-1 > h3 {
+    font-size: 24px;
+  }
+  .division .content-division .division-col-2 {
+    justify-content: center;
+  }
+  .about .title-session > p {
+    font-size: 24px;
+  }
+  .about .about-content .about-img > img {
+    width: 60%;
+  }
+  .about .about-content .about-text h2 {
+    font-size: 26px;
   }
 }
 @media (min-width: 992px) {
@@ -375,7 +407,6 @@ section {
 .division .content-division .division-col-1 p {
   color: #fff;
   text-transform: uppercase;
-  font-size: 9px;
 }
 .division .content-division .division-col-1 h3 {
   color: #FADBE3;

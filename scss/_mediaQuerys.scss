@@ -33,6 +33,7 @@ section {
   p {
     font-size: 1rem;
   }
+  // Hiro
   header {
     height: 100vh;
     .hiro-content {
@@ -53,12 +54,34 @@ section {
       }
     }
   }
-
+  // Divisão
+  .division {
+    .content-division {
+      gap: 18px;
+      text-align: center;
+      .division-col-1 {
+        line-height: 23px;
+        p {
+          font-size: 9px;
+        }
+        >h3{
+          font-size: 22px;
+        }
+      }
+      .division-col-2 {
+        justify-content: center !important;
+        .btn-session {
+          width: 80%;
+          padding: 5px 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  // About
   .about {
-
-    .title-session{
-
-      >p{
+    .title-session {
+      > p {
         font-size: 22px;
       }
     }
@@ -75,28 +98,11 @@ section {
       }
     }
   }
-
-  .division {
-    .content-division {
-      gap: 18px;
-      text-align: center;
-      .division-col-1 {
-        line-height: 23px;
-        p {
-          font-size: 28px;
-        }
-      }
-      .division-col-2 {
-        justify-content: center !important;
-        .btn-session {
-          width: 80%;
-          padding: 5px 30px;
-          font-size: 14px;
-        }
-      }
-    }
-  }
 }
+
+
+// =====================================================
+
 
 @media (min-width: 577px) and (max-width: 767px) {
   .destaqueXG {
@@ -114,6 +120,7 @@ section {
   .btn-session {
     font-size: 1rem;
   }
+  // Hiro
   header {
     .hiro-content {
       flex-direction: column;
@@ -125,7 +132,24 @@ section {
       }
     }
   }
-
+  // Divisão
+  .division {
+    .content-division {
+      .division-col-1{
+        >p{
+          font-size: 11px;
+        }
+        h3{
+          font-size: 26px;
+        }
+      }
+      .division-col-2 {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+  }
+  // About
   .about-content {
     .about-img {
       img {
@@ -133,45 +157,79 @@ section {
       }
     }
   }
-
-  .division {
-    .content-division {
-      .division-col-1 {
-        span {
-          // font-size: 9px !important;
-        }
-      }
-
-      .division-col-2 {
-        text-align: center;
-        justify-content: center;
-      }
-    }
-  }
 }
+
+// ========================================================
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
     padding: 0 24px;
   }
-
-  .destaqueXG {
-    font-size: 32px;
-    color: $Salmon;
-  }
-  .destaqueG {
-    font-size: 28px;
-    color: $Pale-Pink;
-  }
-  .destaqueTitle {
-    font-size: 18px;
-    color: $dark-green;
-  }
+  // Hiro
   header {
     height: 100vh;
+    .hiro-content {
+      .hiro-text {
+        flex: 1;
+        justify-content: flex-start;
+        > span {
+          font-size: 14px;
+        }
+        > h1 {
+          font-size: 28px;
+        }
+        > p {
+          font-size: 14px;
+          line-height: 20x;
+        }
+      }
+      .hiro-img {
+        flex: 1;
+      }
+    }
+  }
+
+  // Divisão
+  .division {
+    .content-division {
+      .division-col-1 {
+        > p {
+          font-size: 11px;
+        }
+        > h3 {
+          font-size: 24px;
+        }
+      }
+      .division-col-2 {
+        justify-content: center;
+      }
+    }
+  }
+  // About
+  .about {
+    .title-session {
+      > p {
+        font-size: 24px;
+      }
+    }
+    .about-content{
+      .about-img{
+        >img{
+        width: 60%;
+        }
+      }
+      .about-text{
+        h2{
+          font-size: 26px;
+        }
+      }
+    }
   }
 }
+
+// ==================================================
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -190,6 +248,10 @@ section {
     color: $dark-green;
   }
 }
+
+// ==================================================
+
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -209,6 +271,9 @@ section {
     color: $dark-green;
   }
 }
+
+// ================================================
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
