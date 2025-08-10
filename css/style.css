@@ -43,12 +43,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 55px;
+  gap: 70px;
   background-image: url("../images/imagem-hiro-fundo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   overflow: hidden;
 }
 header .logoTopo {
@@ -66,9 +65,7 @@ header .logoTopo .destaqueHiro-fundo {
 header .hiro-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  height: 100vh;
+  height: 88vh;
 }
 header .hiro-content h1 {
   margin-bottom: 20px;
@@ -91,16 +88,11 @@ header .hiro-content .hiro-text > span {
   font-size: 16px;
 }
 header .hiro-content .hiro-img {
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 header .hiro-content .hiro-img img {
-  align-self: center;
   width: 100%;
   position: relative;
-  top: -94px;
 }
 
 #hiro {
@@ -199,12 +191,9 @@ section {
   p {
     font-size: 1rem;
   }
-  header {
-    height: 100vh;
-  }
   header .hiro-content {
     flex-direction: column;
-    gap: 130px;
+    height: 100vh;
   }
   header .hiro-content .hiro-text {
     justify-content: center;
@@ -213,10 +202,10 @@ section {
     font-size: 12px;
   }
   header .hiro-content .hiro-text h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   header .hiro-content .hiro-img {
-    width: 85%;
+    width: 100%;
     position: relative;
   }
   .division .content-division {
@@ -259,16 +248,20 @@ section {
     font-size: 28px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .btn-session {
     font-size: 1rem;
   }
   header .hiro-content {
     flex-direction: column;
+    height: 100vh;
+  }
+  header .hiro-content .hiro-text {
+    padding-bottom: 40px;
   }
   header .hiro-content .hiro-img img {
-    width: 60%;
+    width: 85%;
   }
   .division .content-division .division-col-1 > p {
     font-size: 11px;
@@ -288,25 +281,31 @@ section {
   .container {
     padding: 0 24px;
   }
-  header {
+  header .hiro-content {
+    flex-direction: column;
+    gap: 50px;
     height: 100vh;
   }
   header .hiro-content .hiro-text {
     flex: 1;
-    justify-content: flex-start;
+    justify-content: center;
   }
   header .hiro-content .hiro-text > span {
     font-size: 14px;
   }
   header .hiro-content .hiro-text > h1 {
-    font-size: 28px;
+    font-size: 40px;
   }
   header .hiro-content .hiro-text > p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20x;
   }
   header .hiro-content .hiro-img {
+    width: 100%;
     flex: 1;
+  }
+  header .hiro-content .hiro-img > img {
+    width: 100%;
   }
   .division .content-division .division-col-1 > p {
     font-size: 11px;
@@ -354,6 +353,26 @@ section {
   .destaqueTitle {
     font-size: 28px;
     color: #003C1A;
+  }
+  header {
+    gap: 0;
+  }
+  header .hiro-content {
+    flex-direction: row;
+    height: 100vh;
+  }
+  header .hiro-content .hiro-text {
+    justify-content: center;
+  }
+  header .hiro-content .hiro-text h1 {
+    font-size: 42px;
+  }
+  header .hiro-content .hiro-text p {
+    font-size: 18px;
+  }
+  header .hiro-content .hiro-img > img {
+    width: 100%;
+    align-self: flex-end;
   }
 }
 @media (min-width: 1200px) {

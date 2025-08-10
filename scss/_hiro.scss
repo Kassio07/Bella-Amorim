@@ -2,12 +2,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 55px;
+  gap: 70px;
   background-image: url("../images/imagem-hiro-fundo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
   overflow: hidden;
 
   .logoTopo {
@@ -25,9 +24,7 @@ header {
   .hiro-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    height: 100vh;
+    height: 88vh;
     h1 {
       margin-bottom: 20px;
     }
@@ -51,16 +48,10 @@ header {
     }
 
     .hiro-img {
-      height: 100%;
-
       display: flex;
-      flex-direction: column;
-      justify-content: end;
       img {
-        align-self: center;
         width: 100%;
         position: relative;
-        top: -94px;
       }
     }
   }
