@@ -155,7 +155,7 @@ section {
   .about-content {
     .about-img {
       img {
-        width: 60%;
+        width: 80%;
       }
     }
   }
@@ -200,6 +200,7 @@ section {
   // Divisão
   .division {
     .content-division {
+      flex-direction: row !important;
       .division-col-1 {
         > p {
           font-size: 11px;
@@ -227,7 +228,8 @@ section {
         flex: 1;
         >img{
         width: 100%;
-        height: 500px;
+        height: auto;
+        object-fit: cover;
         }
       }
       .about-text{
@@ -284,6 +286,19 @@ section {
       }
     }
   }
+  // Divisor
+  .division{
+    .content-division{
+      .division-col-1{
+        p{
+          font-size: 14px;
+        }
+        h3{
+          font-size: 28px;
+        }
+      }
+    }
+  }
 }
 
 // ==================================================
@@ -307,14 +322,28 @@ section {
     font-size: 28px;
     color: $dark-green;
   }
+  // Divisor
+  .division{
+    .content-division{
+      align-items: center;
+      .division-col-1{
+        p{
+          font-size: 14px;
+        }
+        h3{
+          font-size: 32px;
+        }
+      }
+    }
+  }
 }
 
 // ================================================
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
-    padding: 0 40px;
+    max-width: 1400px;
+    padding: 0 10PX;
   }
 
   .destaqueXG {
@@ -329,4 +358,44 @@ section {
     font-size: 32px;
     color: $dark-green;
   }
+  header{
+    .hiro-content{
+      .hiro-text{
+        h1{
+          font-size: 52px;
+        }
+      }
+      .hiro-img{
+        img{
+          width: 100%;
+
+        }
+      }
+    }
+  }
+    // Divisor
+  .division{
+    .content-division{
+      .division-col-1{
+        p{
+          font-size: 14px;
+        }
+        h3{
+          font-size: 38px;
+        }
+      }
+    }
+  }
+    // About
+  .about{
+    .about-content{
+     .about-img{
+      flex: 0.7;
+      >img{
+        width: 80%;
+      }
+     } 
+    }
+  }
+
 }

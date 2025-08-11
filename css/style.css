@@ -106,8 +106,6 @@ header .hiro-content .hiro-img img {
 }
 .about-content .about-img {
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
 }
 .about-content .about-text {
   display: flex;
@@ -274,7 +272,7 @@ section {
     justify-content: center;
   }
   .about-content .about-img img {
-    width: 60%;
+    width: 80%;
   }
 }
 @media (min-width: 768px) {
@@ -307,6 +305,9 @@ section {
   header .hiro-content .hiro-img > img {
     width: 100%;
   }
+  .division .content-division {
+    flex-direction: row !important;
+  }
   .division .content-division .division-col-1 > p {
     font-size: 11px;
   }
@@ -328,7 +329,9 @@ section {
   }
   .about .about-content .about-img > img {
     width: 100%;
-    height: 500px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about .about-content .about-text {
     flex: 1;
@@ -374,6 +377,12 @@ section {
     width: 100%;
     align-self: flex-end;
   }
+  .division .content-division .division-col-1 p {
+    font-size: 14px;
+  }
+  .division .content-division .division-col-1 h3 {
+    font-size: 28px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -392,11 +401,20 @@ section {
     font-size: 28px;
     color: #003C1A;
   }
+  .division .content-division {
+    align-items: center;
+  }
+  .division .content-division .division-col-1 p {
+    font-size: 14px;
+  }
+  .division .content-division .division-col-1 h3 {
+    font-size: 32px;
+  }
 }
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
-    padding: 0 40px;
+    max-width: 1400px;
+    padding: 0 10PX;
   }
   .destaqueXG {
     font-size: 48px;
@@ -409,6 +427,24 @@ section {
   .destaqueTitle {
     font-size: 32px;
     color: #003C1A;
+  }
+  header .hiro-content .hiro-text h1 {
+    font-size: 52px;
+  }
+  header .hiro-content .hiro-img img {
+    width: 100%;
+  }
+  .division .content-division .division-col-1 p {
+    font-size: 14px;
+  }
+  .division .content-division .division-col-1 h3 {
+    font-size: 38px;
+  }
+  .about .about-content .about-img {
+    flex: 0.7;
+  }
+  .about .about-content .about-img > img {
+    width: 80%;
   }
 }
 .division {
@@ -444,12 +480,14 @@ section {
 .division .content-division .division-col-2 {
   flex: 1;
   display: flex;
+  justify-content: end;
 }
 
 .btn-session {
   padding: 12px 30px;
   background-color: #FADBE3;
   width: 100%;
+  height: 50px;
   max-width: 350px;
   min-width: 250px;
   border-radius: 5px;
