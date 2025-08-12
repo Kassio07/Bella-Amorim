@@ -2,7 +2,7 @@
 .division {
   background-image: url("../images/divisor-seccao.jpg");
   background-size: cover;
-  height: 150px;
+  height: 185px;
 
   display: flex;
   flex-direction: row;
@@ -34,9 +34,6 @@
 
     .division-col-2 {
       flex: 1;
-
-      display: flex;
-      justify-content: end;
     }
   }
 }

@@ -68,7 +68,7 @@ header .hiro-content {
   height: 88vh;
 }
 header .hiro-content h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 header .hiro-content .hiro-text {
   display: flex;
@@ -194,13 +194,13 @@ section {
     height: 100vh;
   }
   header .hiro-content .hiro-text {
-    justify-content: center;
+    justify-content: flex-start;
   }
   header .hiro-content .hiro-text > span {
     font-size: 12px;
   }
   header .hiro-content .hiro-text h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
   header .hiro-content .hiro-img {
     width: 100%;
@@ -269,6 +269,7 @@ section {
   }
   .division .content-division .division-col-2 {
     text-align: center;
+    display: flex;
     justify-content: center;
   }
   .about-content .about-img img {
@@ -299,20 +300,21 @@ section {
     line-height: 20x;
   }
   header .hiro-content .hiro-img {
+    justify-content: center;
     width: 100%;
     flex: 1;
   }
   header .hiro-content .hiro-img > img {
-    width: 100%;
+    width: 60%;
   }
   .division .content-division {
     flex-direction: row !important;
   }
   .division .content-division .division-col-1 > p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .division .content-division .division-col-1 > h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
   .division .content-division .division-col-2 {
     justify-content: center;
@@ -383,6 +385,10 @@ section {
   .division .content-division .division-col-1 h3 {
     font-size: 28px;
   }
+  .division .content-division .division-col-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -450,7 +456,7 @@ section {
 .division {
   background-image: url("../images/divisor-seccao.jpg");
   background-size: cover;
-  height: 150px;
+  height: 185px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -479,8 +485,6 @@ section {
 }
 .division .content-division .division-col-2 {
   flex: 1;
-  display: flex;
-  justify-content: end;
 }
 
 .btn-session {
