@@ -99,6 +99,34 @@ header .hiro-content .hiro-img img {
   background-color: #fef9f1;
 }
 
+#before-after .content-before-after {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+#before-after .content-before-after > div {
+  display: flex;
+}
+#before-after .content-before-after .content-title-before-after {
+  text-align: center;
+}
+#before-after .content-before-after .content-title-before-after h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #003C1A;
+}
+#before-after .content-before-after .content-img-before-after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#before-after .content-before-after .content-img-before-after > img {
+  flex: 1;
+  width: 80%;
+}
+
 .about-content {
   display: flex;
   flex-direction: column;
@@ -115,10 +143,6 @@ header .hiro-content .hiro-img img {
 }
 .about-content .about-text h2 {
   padding-top: 30px;
-}
-.about-content .about-text p {
-  color: rgb(80, 78, 78);
-  font-weight: 500;
 }
 .about-content .about-text .about-services {
   display: flex;
@@ -153,6 +177,100 @@ header .hiro-content .hiro-img img {
 }
 .about-content .about-text .about-services .btn-about > :hover {
   background-color: #8f5959;
+}
+
+.division {
+  background-image: url("../images/divisor-seccao.jpg");
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.division .content-division {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.division .content-division .division-col-1 {
+  flex: 1.3;
+  text-align: left;
+}
+.division .content-division .division-col-1 p {
+  color: #fff;
+  text-transform: uppercase;
+}
+.division .content-division .division-col-1 h3 {
+  color: #FADBE3;
+  text-transform: uppercase;
+}
+.division .content-division .division-col-2 {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.btn-session {
+  padding: 12px 30px;
+  background-color: #FADBE3;
+  width: 100%;
+  height: 50px;
+  max-width: 350px;
+  min-width: 250px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  color: #AC5E5E;
+  font-weight: 700;
+}
+.btn-session i {
+  font-size: 1.5rem;
+  padding-left: 5px;
+}
+.btn-session:hover {
+  background-color: #f6f2f3;
+}
+
+.title-session {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.title-session > div {
+  display: flex;
+  align-items: center;
+}
+.title-session > div i {
+  color: #AC5E5E;
+  font-size: 1rem;
+}
+.title-session > div h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #003C1A;
+  position: relative;
+  font-size: 18px;
+}
+.title-session > div > h2::before {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background-color: #E28D8A;
+  border-radius: 15px;
+}
+.title-session > p {
+  text-align: start;
+  padding-bottom: 40px;
+  font-size: 1rem;
 }
 
 section {
@@ -227,9 +345,6 @@ section {
     padding: 5px 30px;
     font-size: 14px;
   }
-  .about .title-session > p {
-    font-size: 22px;
-  }
   .about .about-content .about-img img {
     width: 100%;
   }
@@ -246,7 +361,7 @@ section {
     font-size: 28px;
   }
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
   .btn-session {
     font-size: 1rem;
@@ -274,10 +389,32 @@ section {
   .about-content .about-img img {
     width: 80%;
   }
+  #before-after .content-before-after .content-title-before-after h3 {
+    font-size: 18px;
+  }
+  #before-after .content-before-after .content-img-before-after {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #before-after .content-before-after .content-img-before-after > img {
+    max-width: 300px;
+    min-width: 200px;
+  }
+  .title-session > div h2 {
+    font-size: 22px;
+  }
+  .title-session > p {
+    font-size: 18px;
+  }
 }
 @media (min-width: 768px) {
   .container {
     padding: 0 24px;
+  }
+  p {
+    font-size: 22px;
   }
   header .hiro-content {
     flex-direction: column;
@@ -317,9 +454,6 @@ section {
   .division .content-division .division-col-2 {
     justify-content: center;
   }
-  .about .title-session > p {
-    font-size: 24px;
-  }
   .about .about-content {
     flex-direction: row;
     gap: 25px;
@@ -338,6 +472,22 @@ section {
   }
   .about .about-content .about-text h2 {
     font-size: 26px;
+  }
+  .title-session > div h2 {
+    font-size: 22px;
+  }
+  .title-session > p {
+    font-size: 18px;
+  }
+  #before-after .content-before-after .content-img-before-after {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #before-after .content-before-after .content-img-before-after > img {
+    max-width: 400px;
+    min-width: 250px;
   }
 }
 @media (min-width: 992px) {
@@ -383,6 +533,22 @@ section {
   .division .content-division .division-col-1 h3 {
     font-size: 28px;
   }
+  .title-session > div h2 {
+    font-size: 22px;
+  }
+  .title-session > p {
+    font-size: 18px;
+  }
+  #before-after .content-before-after .content-img-before-after {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #before-after .content-before-after .content-img-before-after > img {
+    max-width: 500px;
+    min-width: 300px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -410,11 +576,17 @@ section {
   .division .content-division .division-col-1 h3 {
     font-size: 32px;
   }
+  .title-session > div h2 {
+    font-size: 22px;
+  }
+  .title-session > p {
+    font-size: 18px;
+  }
 }
 @media (min-width: 1400px) {
   .container {
     max-width: 1400px;
-    padding: 0 10PX;
+    padding: 0 10px;
   }
   .destaqueXG {
     font-size: 48px;
@@ -441,96 +613,18 @@ section {
     font-size: 38px;
   }
   .about .about-content .about-img {
-    flex: 0.7;
+    flex: 1;
   }
   .about .about-content .about-img > img {
     width: 80%;
   }
+  .title-session > div h2 {
+    font-size: 22px;
+  }
+  .title-session > p {
+    font-size: 18px;
+  }
 }
-.division {
-  background-image: url("../images/divisor-seccao.jpg");
-  background-size: cover;
-  height: 150px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.division .content-division {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.division .content-division .division-col-1 {
-  flex: 1.3;
-  text-align: left;
-}
-.division .content-division .division-col-1 p {
-  color: #fff;
-  text-transform: uppercase;
-}
-.division .content-division .division-col-1 h3 {
-  color: #FADBE3;
-  text-transform: uppercase;
-}
-.division .content-division .division-col-2 {
-  flex: 1;
-  display: flex;
-  justify-content: end;
-}
-
-.btn-session {
-  padding: 12px 30px;
-  background-color: #FADBE3;
-  width: 100%;
-  height: 50px;
-  max-width: 350px;
-  min-width: 250px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s;
-  color: #AC5E5E;
-  font-weight: 700;
-}
-.btn-session i {
-  font-size: 1.5rem;
-  padding-left: 5px;
-}
-.btn-session:hover {
-  background-color: #f6f2f3;
-}
-
-.title-session {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-}
-.title-session i {
-  color: #AC5E5E;
-}
-.title-session p {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
-  color: #003C1A;
-  position: relative;
-}
-.title-session > p::before {
-  content: " ";
-  position: absolute;
-  bottom: -5px;
-  width: 100%;
-  height: 1px;
-  background-color: #E28D8A;
-  border-radius: 15px;
-}
-
 .destaqueXG,
 .destaqueG,
 .destaqueTitle {

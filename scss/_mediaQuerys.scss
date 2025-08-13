@@ -63,7 +63,7 @@ section {
         p {
           font-size: 9px;
         }
-        >h3{
+        > h3 {
           font-size: 22px;
         }
       }
@@ -79,11 +79,6 @@ section {
   }
   // About
   .about {
-    .title-session {
-      > p {
-        font-size: 22px;
-      }
-    }
     .about-content {
       .about-img {
         img {
@@ -99,9 +94,7 @@ section {
   }
 }
 
-
 // =====================================================
-
 
 @media (min-width: 577px) and (max-width: 767px) {
   .destaqueXG {
@@ -113,7 +106,7 @@ section {
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .btn-session {
@@ -124,7 +117,7 @@ section {
     .hiro-content {
       flex-direction: column;
       height: 100vh;
-      .hiro-text{
+      .hiro-text {
         padding-bottom: 40px;
       }
       .hiro-img {
@@ -137,11 +130,11 @@ section {
   // Divisão
   .division {
     .content-division {
-      .division-col-1{
-        >p{
+      .division-col-1 {
+        > p {
           font-size: 11px;
         }
-        h3{
+        h3 {
           font-size: 26px;
         }
       }
@@ -159,6 +152,38 @@ section {
       }
     }
   }
+  // before-after
+  #before-after {
+    .content-before-after {
+      .content-title-before-after {
+        h3 {
+          font-size: 18px;
+        }
+      }
+
+      .content-img-before-after {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        > img {
+          max-width: 300px;
+          min-width: 200px;
+        }
+      }
+    }
+  }
+  // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
 }
 
 // ========================================================
@@ -166,6 +191,10 @@ section {
 @media (min-width: 768px) {
   .container {
     padding: 0 24px;
+  }
+
+  p {
+    font-size: 22px;
   }
   // Hiro
   header {
@@ -190,8 +219,8 @@ section {
       .hiro-img {
         width: 100%;
         flex: 1;
-        >img{
-          width:100%;
+        > img {
+          width: 100%;
         }
       }
     }
@@ -216,26 +245,48 @@ section {
   }
   // About
   .about {
-    .title-session {
-      > p {
-        font-size: 24px;
-      }
-    }
-    .about-content{
+    .about-content {
       flex-direction: row;
       gap: 25px;
-      .about-img{
+      .about-img {
         flex: 1;
-        >img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        > img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
         }
       }
-      .about-text{
+      .about-text {
         flex: 1;
-        h2{
+        h2 {
           font-size: 26px;
+        }
+      }
+    }
+  }
+    // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
+
+    // before-after
+  #before-after {
+    .content-before-after {
+      .content-img-before-after {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        > img {
+          max-width: 400px;
+          min-width: 250px;
         }
       }
     }
@@ -262,24 +313,23 @@ section {
     color: $dark-green;
   }
 
-  header{
+  header {
     gap: 0;
-    .hiro-content{
+    .hiro-content {
       flex-direction: row;
       height: 100vh;
-      .hiro-text{
+      .hiro-text {
         justify-content: center;
 
-        h1{
+        h1 {
           font-size: 42px;
         }
-        p{
+        p {
           font-size: 18px;
         }
       }
-      .hiro-img{
-     
-        >img{
+      .hiro-img {
+        > img {
           width: 100%;
           align-self: flex-end;
         }
@@ -287,14 +337,41 @@ section {
     }
   }
   // Divisor
-  .division{
-    .content-division{
-      .division-col-1{
-        p{
+  .division {
+    .content-division {
+      .division-col-1 {
+        p {
           font-size: 14px;
         }
-        h3{
+        h3 {
           font-size: 28px;
+        }
+      }
+    }
+  }
+    // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
+
+      // before-after
+  #before-after {
+    .content-before-after {
+      .content-img-before-after {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        > img {
+          max-width: 500px;
+          min-width: 300px;
         }
       }
     }
@@ -302,7 +379,6 @@ section {
 }
 
 // ==================================================
-
 
 @media (min-width: 1200px) {
   .container {
@@ -323,17 +399,28 @@ section {
     color: $dark-green;
   }
   // Divisor
-  .division{
-    .content-division{
+  .division {
+    .content-division {
       align-items: center;
-      .division-col-1{
-        p{
+      .division-col-1 {
+        p {
           font-size: 14px;
         }
-        h3{
+        h3 {
           font-size: 32px;
         }
       }
+    }
+  }
+    // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
     }
   }
 }
@@ -343,7 +430,7 @@ section {
 @media (min-width: 1400px) {
   .container {
     max-width: 1400px;
-    padding: 0 10PX;
+    padding: 0 10px;
   }
 
   .destaqueXG {
@@ -358,44 +445,56 @@ section {
     font-size: 32px;
     color: $dark-green;
   }
-  header{
-    .hiro-content{
-      .hiro-text{
-        h1{
+  header {
+    .hiro-content {
+      .hiro-text {
+        h1 {
           font-size: 52px;
         }
       }
-      .hiro-img{
-        img{
+      .hiro-img {
+        img {
           width: 100%;
-
         }
       }
     }
   }
-    // Divisor
-  .division{
-    .content-division{
-      .division-col-1{
-        p{
+  // Divisor
+  .division {
+    .content-division {
+      .division-col-1 {
+        p {
           font-size: 14px;
         }
-        h3{
+        h3 {
           font-size: 38px;
         }
       }
     }
   }
-    // About
-  .about{
-    .about-content{
-     .about-img{
-      flex: 0.7;
-      >img{
-        width: 80%;
+  // About
+  .about {
+    .about-content {
+      .about-img {
+        flex: 1;
+        > img {
+          width: 80%;
+        }
       }
-     } 
+      .about-text {
+        // flex: 1;
+      }
     }
   }
-
+    // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
 }
