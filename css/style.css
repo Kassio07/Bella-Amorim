@@ -211,6 +211,8 @@ header .hiro-content .hiro-img img {
 }
 .division .content-division .division-col-2 {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-session {
@@ -334,9 +336,6 @@ section {
   }
   .division .content-division .division-col-1 > h3 {
     font-size: 22px;
-  }
-  .division .content-division .division-col-2 {
-    justify-content: center !important;
   }
   .division .content-division .division-col-2 .btn-session {
     width: 80%;
