@@ -77,7 +77,7 @@ section {
     }
   }
   // About
-  .about {
+  #about {
     .about-content {
       .about-img {
         img {
@@ -194,7 +194,7 @@ section {
   }
 
   p {
-    font-size: 22px;
+    font-size: 18px;
   }
   // Hiro
   header {
@@ -221,7 +221,12 @@ section {
         width: 100%;
         flex: 1;
         > img {
-          width: 100%;
+          width: 60%;
+        }
+      }
+      .hiro-GroupIcons-img{
+        >img{
+          width: 80px !important;
         }
       }
     }
@@ -245,7 +250,7 @@ section {
     }
   }
   // About
-  .about {
+  #about {
     .about-content {
       flex-direction: row;
       gap: 25px;
@@ -478,7 +483,7 @@ section {
     }
   }
   // About
-  .about {
+  #about {
     .about-content {
       .about-img {
         flex: 1;

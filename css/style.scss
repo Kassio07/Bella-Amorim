@@ -25,9 +25,10 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  background-color: $white;
 }
 p {
-  color: rgb(80, 78, 78);
+  color: #666;
   font-weight: 500;
 }
 a {
@@ -45,4 +46,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+strong{
+  font-weight: 600;
 }

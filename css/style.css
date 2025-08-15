@@ -87,6 +87,15 @@ header .hiro-content .hiro-text p {
 header .hiro-content .hiro-text > span {
   font-size: 16px;
 }
+header .hiro-content .hiro-text .hiro-GroupIcons-img {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 30px;
+}
+header .hiro-content .hiro-text .hiro-GroupIcons-img > img {
+  width: 50px;
+}
 header .hiro-content .hiro-img {
   display: flex;
 }
@@ -127,55 +136,55 @@ header .hiro-content .hiro-img img {
   width: 80%;
 }
 
-.about-content {
+#about .about-content {
   display: flex;
   flex-direction: column;
   padding: 70px 0;
 }
-.about-content .about-img {
+#about .about-content .about-img {
   margin-bottom: 30px;
 }
-.about-content .about-text {
+#about .about-content .about-text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
 }
-.about-content .about-text h2 {
+#about .about-content .about-text h2 {
   padding-top: 30px;
 }
-.about-content .about-text .about-services {
+#about .about-content .about-text .about-services {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.about-content .about-text .about-services ul {
+#about .about-content .about-text .about-services ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 5px;
   padding-top: 20px;
 }
-.about-content .about-text .about-services ul li {
+#about .about-content .about-text .about-services ul li {
   color: #003C1A;
   font-weight: 500;
   font-size: 1.2rem;
 }
-.about-content .about-text .about-services ul li i {
+#about .about-content .about-text .about-services ul li i {
   margin-right: 5px;
   font-size: 1.3rem;
 }
-.about-content .about-text .about-services .btn-about {
+#about .about-content .about-text .about-services .btn-about {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
-.about-content .about-text .about-services .btn-about > a {
+#about .about-content .about-text .about-services .btn-about > a {
   background-color: #AC5E5E;
   color: #fff;
   transition: all 0.5s;
 }
-.about-content .about-text .about-services .btn-about > :hover {
+#about .about-content .about-text .about-services .btn-about > :hover {
   background-color: #8f5959;
 }
 
@@ -342,10 +351,10 @@ section {
     padding: 5px 30px;
     font-size: 14px;
   }
-  .about .about-content .about-img img {
+  #about .about-content .about-img img {
     width: 100%;
   }
-  .about .about-content .about-text h2 {
+  #about .about-content .about-text h2 {
     font-size: 24px;
   }
 }
@@ -412,7 +421,7 @@ section {
     padding: 0 24px;
   }
   p {
-    font-size: 22px;
+    font-size: 18px;
   }
   header .hiro-content {
     flex-direction: column;
@@ -439,7 +448,10 @@ section {
     flex: 1;
   }
   header .hiro-content .hiro-img > img {
-    width: 100%;
+    width: 60%;
+  }
+  header .hiro-content .hiro-GroupIcons-img > img {
+    width: 80px !important;
   }
   .division .content-division {
     flex-direction: row !important;
@@ -453,23 +465,23 @@ section {
   .division .content-division .division-col-2 {
     justify-content: center;
   }
-  .about .about-content {
+  #about .about-content {
     flex-direction: row;
     gap: 25px;
   }
-  .about .about-content .about-img {
+  #about .about-content .about-img {
     flex: 1;
   }
-  .about .about-content .about-img > img {
+  #about .about-content .about-img > img {
     width: 100%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .about .about-content .about-text {
+  #about .about-content .about-text {
     flex: 1;
   }
-  .about .about-content .about-text h2 {
+  #about .about-content .about-text h2 {
     font-size: 26px;
   }
   .title-session > div h2 {
@@ -615,10 +627,10 @@ section {
   .division .content-division .division-col-1 h3 {
     font-size: 38px;
   }
-  .about .about-content .about-img {
+  #about .about-content .about-img {
     flex: 1;
   }
-  .about .about-content .about-img > img {
+  #about .about-content .about-img > img {
     width: 80%;
   }
   .title-session > div h2 {
@@ -660,10 +672,11 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 p {
-  color: rgb(80, 78, 78);
+  color: #666;
   font-weight: 500;
 }
 
@@ -685,4 +698,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+strong {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
