@@ -184,6 +184,16 @@ section {
       font-size: 18px;
     }
   }
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .beneficios-card {
+        max-width: 340px;
+      }
+    }
+  }
 }
 
 // ========================================================
@@ -224,8 +234,8 @@ section {
           width: 60%;
         }
       }
-      .hiro-GroupIcons-img{
-        >img{
+      .hiro-GroupIcons-img {
+        > img {
           width: 80px !important;
         }
       }
@@ -270,7 +280,7 @@ section {
       }
     }
   }
-    // title seções  =======================================================
+  // title seções  =======================================================
   .title-session {
     > div {
       h2 {
@@ -282,7 +292,7 @@ section {
     }
   }
 
-    // before-after
+  // before-after
   #before-after {
     .content-before-after {
       .content-img-before-after {
@@ -294,6 +304,17 @@ section {
           max-width: 400px;
           min-width: 250px;
         }
+      }
+    }
+  }
+
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .beneficios-card {
+        max-width: 400px;
       }
     }
   }
@@ -353,13 +374,13 @@ section {
           font-size: 28px;
         }
       }
-      .division-col-2{
+      .division-col-2 {
         display: flex;
         justify-content: flex-end;
       }
     }
   }
-    // title seções  =======================================================
+  // title seções  =======================================================
   .title-session {
     > div {
       h2 {
@@ -371,7 +392,7 @@ section {
     }
   }
 
-      // before-after
+  // before-after
   #before-after {
     .content-before-after {
       .content-img-before-after {
@@ -383,6 +404,17 @@ section {
           max-width: 500px;
           min-width: 300px;
         }
+      }
+    }
+  }
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 5px;
+      .beneficios-card {
+        max-width: 450px;
       }
     }
   }
@@ -422,7 +454,7 @@ section {
       }
     }
   }
-    // title seções  =======================================================
+  // title seções  =======================================================
   .title-session {
     > div {
       h2 {
@@ -431,6 +463,14 @@ section {
     }
     > p {
       font-size: 18px;
+    }
+  }
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      .beneficios-card {
+        max-width: 350px;
+      }
     }
   }
 }
@@ -496,7 +536,7 @@ section {
       }
     }
   }
-    // title seções  =======================================================
+  // title seções  =======================================================
   .title-session {
     > div {
       h2 {
@@ -505,6 +545,15 @@ section {
     }
     > p {
       font-size: 18px;
+    }
+  }
+
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      .beneficios-card {
+        max-width: 450px;
+      }
     }
   }
 }

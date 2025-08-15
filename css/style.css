@@ -188,10 +188,37 @@ header .hiro-content .hiro-img img {
   background-color: #8f5959;
 }
 
+#beneficios .beneficios-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+#beneficios .beneficios-content .beneficios-card {
+  background-color: #FADBE3;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#beneficios .beneficios-content .beneficios-card i {
+  color: #AC5E5E;
+  font-size: 18px;
+}
+#beneficios .beneficios-content .beneficios-card p {
+  color: #003C1A;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .division {
   background-image: url("../images/divisor-seccao.jpg");
   background-size: cover;
-  height: 185px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -415,6 +442,13 @@ section {
   .title-session > p {
     font-size: 18px;
   }
+  #beneficios .beneficios-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #beneficios .beneficios-content .beneficios-card {
+    max-width: 340px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -500,6 +534,13 @@ section {
     max-width: 400px;
     min-width: 250px;
   }
+  #beneficios .beneficios-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #beneficios .beneficios-content .beneficios-card {
+    max-width: 400px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -564,6 +605,14 @@ section {
     max-width: 500px;
     min-width: 300px;
   }
+  #beneficios .beneficios-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  #beneficios .beneficios-content .beneficios-card {
+    max-width: 450px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -596,6 +645,9 @@ section {
   }
   .title-session > p {
     font-size: 18px;
+  }
+  #beneficios .beneficios-content .beneficios-card {
+    max-width: 350px;
   }
 }
 @media (min-width: 1400px) {
@@ -638,6 +690,9 @@ section {
   }
   .title-session > p {
     font-size: 18px;
+  }
+  #beneficios .beneficios-content .beneficios-card {
+    max-width: 450px;
   }
 }
 .destaqueXG,
