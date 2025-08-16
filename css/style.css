@@ -94,7 +94,7 @@ header .hiro-content .hiro-text .hiro-GroupIcons-img {
   margin-top: 30px;
 }
 header .hiro-content .hiro-text .hiro-GroupIcons-img > img {
-  width: 50px;
+  width: 70px;
 }
 header .hiro-content .hiro-img {
   display: flex;
@@ -193,7 +193,7 @@ header .hiro-content .hiro-img img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 17px;
+  gap: 10px;
 }
 #beneficios .beneficios-content .beneficios-card {
   background-color: #FADBE3;
@@ -382,7 +382,7 @@ section {
     width: 100%;
   }
   #about .about-content .about-text h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -516,7 +516,7 @@ section {
     flex: 1;
   }
   #about .about-content .about-text h2 {
-    font-size: 26px;
+    font-size: 32px;
   }
   .title-session > div h2 {
     font-size: 22px;
@@ -608,7 +608,6 @@ section {
   #beneficios .beneficios-content {
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5px;
   }
   #beneficios .beneficios-content .beneficios-card {
     max-width: 450px;
