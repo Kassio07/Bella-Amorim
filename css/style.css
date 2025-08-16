@@ -215,6 +215,30 @@ header .hiro-content .hiro-img img {
   font-size: 14px;
 }
 
+#services .content-service .service-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#services .content-service .service-cards .service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FADBE3;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  height: 480px;
+}
+#services .content-service .service-cards .service-card h4 {
+  text-align: center;
+  font-size: 16px;
+  color: #003C1A;
+}
+
 .division {
   background-image: url("../images/divisor-seccao.jpg");
   background-size: cover;
@@ -278,6 +302,7 @@ header .hiro-content .hiro-img img {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-bottom: 100px;
 }
 .title-session > div {
   display: flex;
@@ -303,9 +328,13 @@ header .hiro-content .hiro-img img {
   background-color: #E28D8A;
   border-radius: 15px;
 }
+.title-session h3 {
+  font-size: 16px;
+  color: #AC5E5E;
+}
 .title-session > p {
   text-align: start;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   font-size: 1rem;
 }
 
@@ -449,6 +478,16 @@ section {
   #beneficios .beneficios-content .beneficios-card {
     max-width: 340px;
   }
+  #services .content-service .service-cards {
+    display: flex;
+    flex-direction: row;
+  }
+  #services .content-service .service-cards .service-card {
+    max-width: 300px;
+  }
+  #services .content-service .service-cards .service-card > p {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -541,6 +580,12 @@ section {
   #beneficios .beneficios-content .beneficios-card {
     max-width: 400px;
   }
+  #services .content-service .service-cards {
+    flex-direction: row;
+  }
+  #services .content-service .service-cards .service-card {
+    max-width: 350px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -611,6 +656,12 @@ section {
   }
   #beneficios .beneficios-content .beneficios-card {
     max-width: 450px;
+  }
+  #services .content-service .service-cards {
+    flex-direction: row;
+  }
+  #services .content-service .service-cards .service-card {
+    max-width: 400px;
   }
 }
 @media (min-width: 1200px) {

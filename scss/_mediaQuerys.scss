@@ -194,6 +194,23 @@ section {
       }
     }
   }
+
+  // services
+  #services {
+    .content-service {
+      .service-cards {
+        display: flex;
+        flex-direction: row;
+        .service-card {
+          max-width: 300px;
+
+          > p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 // ========================================================
@@ -318,6 +335,18 @@ section {
       }
     }
   }
+
+  // services
+  #services {
+    .content-service {
+      .service-cards {
+        flex-direction: row;
+        .service-card {
+          max-width: 350px;
+        }
+      }
+    }
+  }
 }
 
 // ==================================================
@@ -414,6 +443,18 @@ section {
       justify-content: space-between;
       .beneficios-card {
         max-width: 450px;
+      }
+    }
+  }
+
+  // services
+  #services {
+    .content-service {
+      .service-cards {
+        flex-direction: row;
+        .service-card {
+          max-width: 400px;
+        }
       }
     }
   }
