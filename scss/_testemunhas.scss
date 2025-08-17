@@ -1,0 +1,77 @@
+#testemunhas {
+  .content-testemunhas {
+    .testemunhas-cards {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      overflow-x: hidden;
+      height: 500px;
+      button{
+       position: absolute;
+       background-color: transparent;
+       top: 50%;
+       transform: translateY(-50%);
+      }
+      #next{
+       right: 0;
+      }
+      #prev{
+       left: 0;
+      }
+      .slides {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 40px;
+        transition: 1s;
+        margin: 20px;
+        padding: 20px;
+        .testemunhas-card {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          min-width: 380px;
+          gap: 20px;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+          .star {
+            display: flex;
+            flex-direction: row;
+            gap: 2px;
+            font-size: 18px;
+            color: yellow;
+          }
+
+          .text-card {
+            font-size: 1rem;
+            text-align: justify;
+            line-height: 25px;
+            color: #666;
+            > i {
+              color: $Dusty-Rose;
+              font-size: 18px;
+            }
+          }
+
+          .autor-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            img {
+              width: 40px;
+            }
+            span {
+              font-size: 1rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
