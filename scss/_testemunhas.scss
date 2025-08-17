@@ -1,72 +1,61 @@
 #testemunhas {
   .content-testemunhas {
-    .testemunhas-cards {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
+    .slider-container {
+      display: flex;
+      flex-direction: row;
+      // justify-content: center;
+      align-items: center;
+
       position: relative;
-      left: 50%;
-      transform: translate(-50%);
-      overflow-x: hidden;
+      max-width: 100%;
+      overflow: hidden;
       height: 500px;
-      button{
-       position: absolute;
-       background-color: transparent;
-       top: 50%;
-       transform: translateY(-50%);
-      }
-      #next{
-       right: 0;
+      button {
+        background-color: transparent;
+        position: absolute;
+        z-index: 999;
       }
       #prev{
-       left: 0;
+        left: 0;
       }
-      .slides {
+      #next {
+        right: 0;
+      }
+      .slider--width{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 40px;
-        transition: 1s;
-        margin: 20px;
-        padding: 20px;
-        .testemunhas-card {
+        gap: 10px;
+        padding: 40px 10px;
+        transition:transform 1s ease;
+        .slider--item{
           display: flex;
           flex-direction: column;
-          padding: 20px;
-          min-width: 380px;
-          gap: 20px;
-          border-radius: 10px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-
+          gap: 30px;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+            rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          padding: 15px;
+          width: 380px;
+          height: inherit;
           .star {
-            display: flex;
-            flex-direction: row;
-            gap: 2px;
-            font-size: 18px;
             color: yellow;
           }
-
           .text-card {
-            font-size: 1rem;
             text-align: justify;
-            line-height: 25px;
-            color: #666;
-            > i {
+
+            i {
               color: $Dusty-Rose;
-              font-size: 18px;
             }
           }
-
           .autor-card {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 15px;
-            img {
-              width: 40px;
+            gap: 10px;
+            > img {
+              width: 50px;
             }
             span {
-              font-size: 1rem;
               font-weight: 500;
             }
           }

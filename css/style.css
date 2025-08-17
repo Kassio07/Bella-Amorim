@@ -243,74 +243,62 @@ header .hiro-content .hiro-img img {
   font-size: 1.3rem;
 }
 
-#testemunhas .content-testemunhas .testemunhas-cards {
+#testemunhas .content-testemunhas .slider-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  overflow-x: hidden;
+  max-width: 100%;
+  overflow: hidden;
   height: 500px;
 }
-#testemunhas .content-testemunhas .testemunhas-cards button {
-  position: absolute;
+#testemunhas .content-testemunhas .slider-container button {
   background-color: transparent;
-  top: 50%;
-  transform: translateY(-50%);
+  position: absolute;
+  z-index: 999;
 }
-#testemunhas .content-testemunhas .testemunhas-cards #next {
-  right: 0;
-}
-#testemunhas .content-testemunhas .testemunhas-cards #prev {
+#testemunhas .content-testemunhas .slider-container #prev {
   left: 0;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides {
+#testemunhas .content-testemunhas .slider-container #next {
+  right: 0;
+}
+#testemunhas .content-testemunhas .slider-container .slider--width {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 40px;
-  transition: 1s;
-  margin: 20px;
-  padding: 20px;
+  gap: 10px;
+  padding: 40px 10px;
+  transition: transform 1s ease;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides .testemunhas-card {
+#testemunhas .content-testemunhas .slider-container .slider--width .slider--item {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  min-width: 380px;
-  gap: 20px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  gap: 30px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: 15px;
+  width: 380px;
+  height: inherit;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides .testemunhas-card .star {
-  display: flex;
-  flex-direction: row;
-  gap: 2px;
-  font-size: 18px;
+#testemunhas .content-testemunhas .slider-container .slider--width .slider--item .star {
   color: yellow;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides .testemunhas-card .text-card {
-  font-size: 1rem;
+#testemunhas .content-testemunhas .slider-container .slider--width .slider--item .text-card {
   text-align: justify;
-  line-height: 25px;
-  color: #666;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides .testemunhas-card .text-card > i {
+#testemunhas .content-testemunhas .slider-container .slider--width .slider--item .text-card i {
   color: #AC5E5E;
-  font-size: 18px;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides .testemunhas-card .autor-card {
+#testemunhas .content-testemunhas .slider-container .slider--width .slider--item .autor-card {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides .testemunhas-card .autor-card img {
-  width: 40px;
+#testemunhas .content-testemunhas .slider-container .slider--width .slider--item .autor-card > img {
+  width: 50px;
 }
-#testemunhas .content-testemunhas .testemunhas-cards .slides .testemunhas-card .autor-card span {
-  font-size: 1rem;
+#testemunhas .content-testemunhas .slider-container .slider--width .slider--item .autor-card span {
   font-weight: 500;
 }
 
