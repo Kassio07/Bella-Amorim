@@ -249,7 +249,6 @@ header .hiro-content .hiro-img img {
   align-items: center;
   position: relative;
   max-width: 100%;
-  overflow: hidden;
   height: 500px;
 }
 #testemunhas .content-testemunhas .slider-container button {
@@ -268,8 +267,7 @@ header .hiro-content .hiro-img img {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
-  padding: 40px 10px;
-  transition: transform 1s ease;
+  transition: transform 1.4s ease;
 }
 #testemunhas .content-testemunhas .slider-container .slider--width .slider--item {
   display: flex;

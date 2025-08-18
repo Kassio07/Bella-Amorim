@@ -3,13 +3,12 @@
     .slider-container {
       display: flex;
       flex-direction: row;
-      // justify-content: center;
       align-items: center;
 
       position: relative;
       max-width: 100%;
-      overflow: hidden;
       height: 500px;
+      // overflow: hidden;
       button {
         background-color: transparent;
         position: absolute;
@@ -26,8 +25,8 @@
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 10px;
-        padding: 40px 10px;
-        transition:transform 1s ease;
+        // padding: 0px 10px;
+        transition:transform 1.4s ease;
         .slider--item{
           display: flex;
           flex-direction: column;

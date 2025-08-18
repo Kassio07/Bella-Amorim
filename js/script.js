@@ -31,7 +31,7 @@ function updateMargin(){
 c('.slider--width').style.transform = `translateX(-${currentSlide * widthItem}px)`;
 }
 
-setInterval(goNext, 3000);
+setInterval(goNext, 4000);
 
 
 
