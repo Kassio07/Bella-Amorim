@@ -2,11 +2,9 @@
 let c = (e) => document.querySelector(e);
 let cs = (e) => document.querySelectorAll(e);
 
-let totalSlideItem = cs('.slider--item').length;
-let slideWidth = c('.slider--width').clientWidth;
-let widthItem = c('.slider--item').clientWidth;
-
-c('.slider--width').style.width = `${slideWidth * totalSlideItem}px`;
+let totalSlideItem = cs('.slider--item').length; // Qtde de item
+let widthItem = c('.slider--item').clientWidth; // Largura do item
+let slideWidth = c('.slider--width').clientWidth; // Largura do width(scroll)
 
 let currentSlide = 0;
 

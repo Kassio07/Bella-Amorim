@@ -248,8 +248,8 @@ header .hiro-content .hiro-img img {
   flex-direction: row;
   align-items: center;
   position: relative;
-  max-width: 100%;
-  height: 500px;
+  height: auto;
+  overflow: hidden;
 }
 #testemunhas .content-testemunhas .slider-container button {
   background-color: transparent;
@@ -267,6 +267,7 @@ header .hiro-content .hiro-img img {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
+  padding: 40px 10px;
   transition: transform 1.4s ease;
 }
 #testemunhas .content-testemunhas .slider-container .slider--width .slider--item {
@@ -275,7 +276,8 @@ header .hiro-content .hiro-img img {
   gap: 30px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   padding: 15px;
-  width: 380px;
+  max-width: 350px;
+  min-width: 320px;
   height: inherit;
 }
 #testemunhas .content-testemunhas .slider-container .slider--width .slider--item .star {
@@ -298,6 +300,9 @@ header .hiro-content .hiro-img img {
 }
 #testemunhas .content-testemunhas .slider-container .slider--width .slider--item .autor-card span {
   font-weight: 500;
+}
+#testemunhas .content-testemunhas .title-session > h3 {
+  text-align: center;
 }
 
 .division {
