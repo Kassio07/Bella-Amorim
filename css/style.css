@@ -304,7 +304,59 @@ header .hiro-content .hiro-img img {
 #testemunhas .content-testemunhas .title-session > h3 {
   text-align: center;
 }
+#testemunhas .btn-about {
+  padding: 70px 0;
+}
+#testemunhas .btn-about .btn-session {
+  background-color: #AC5E5E;
+  margin: 0 auto;
+  color: #fff;
+}
+#testemunhas .btn-about .btn-session:hover {
+  background-color: #884c4c;
+}
 
+#contact .content-contato {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#contact .content-contato .contact-box1,
+#contact .content-contato .contact-box2 {
+  flex: 1;
+}
+#contact .content-contato .contact-box1 {
+  display: flex;
+  flex-direction: column;
+}
+#contact .content-contato .contact-box1 .box1-row,
+#contact .content-contato .contact-box1 .box2-row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#contact .content-contato .contact-box1 .box1-row h4,
+#contact .content-contato .contact-box1 .box2-row h4 {
+  color: #AC5E5E;
+  font-weight: 700;
+  font-size: 18px;
+}
+#contact .content-contato .contact-box1 .box1-row {
+  gap: 30px;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text1 span {
+  font-size: 12px;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text1 span:nth-child(even) {
+  color: #003C1A;
+  font-weight: 600;
+  font-size: 14px;
+}
 .division {
   background-image: url("../images/divisor-seccao.jpg");
   background-size: cover;
@@ -707,6 +759,9 @@ section {
   }
   .title-session > p {
     font-size: 18px;
+  }
+  .title-session h3 {
+    font-size: 22px;
   }
   #before-after .content-before-after .content-img-before-after {
     flex-direction: row;

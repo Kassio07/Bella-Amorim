@@ -68,4 +68,16 @@
       }
     }
   }
+
+  .btn-about{
+    padding: 70px 0;
+    .btn-session{
+      background-color: $Dusty-Rose;
+      margin: 0 auto;
+      color: $white;
+      &:hover{
+        background-color: #884c4c;
+      }
+    }
+  }
 }
