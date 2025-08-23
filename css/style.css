@@ -449,7 +449,7 @@ footer .footer-container .foo-row1 .foo-text-title h2 {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  max-width: 500px;
+  max-width: 600px;
 }
 footer .footer-container .foo-row1 .foo-text-info {
   display: flex;
@@ -461,18 +461,21 @@ footer .footer-container .foo-row1 .foo-text-info {
 footer .footer-container .foo-row1 .foo-text-info span {
   font-size: 14px;
 }
+footer .footer-container .foo-row1 .foo-text-info span i {
+  margin-right: 5px;
+}
 footer .footer-container .foo-row2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
 }
-footer .footer-container .foo-row2 .foo-links {
+footer .footer-container .foo-row2 ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-footer .footer-container .foo-row2 .foo-links span > a {
+footer .footer-container .foo-row2 ul li > a {
   color: #fff;
   font-size: 16px;
   text-decoration: underline;
@@ -578,7 +581,7 @@ footer .footer-container .foo-row2 .copy > strong {
 }
 .title-session h3 {
   font-size: 16px;
-  color: #AC5E5E;
+  color: #003C1A;
 }
 .title-session > p {
   text-align: start;
@@ -746,7 +749,7 @@ section {
     flex-direction: row;
     align-items: center;
   }
-  footer .footer-container .foo-row2 .foo-links {
+  footer .footer-container .foo-row2 .ul {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 40px 0;
@@ -876,7 +879,7 @@ section {
     flex-direction: row;
     align-items: center;
   }
-  footer .footer-container .foo-row2 .foo-links {
+  footer .footer-container .foo-row2 ul {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 40px 0;
@@ -943,7 +946,7 @@ section {
     font-size: 18px;
   }
   .title-session h3 {
-    font-size: 22px;
+    font-size: 16px;
   }
   #before-after .content-before-after .content-img-before-after {
     flex-direction: row;

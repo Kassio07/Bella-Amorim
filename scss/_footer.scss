@@ -18,7 +18,7 @@ footer{
      font-weight: 700;
      text-transform: uppercase;
      color: $white;
-     max-width: 500px;
+     max-width: 600px;
     }
    }
    .foo-text-info{
@@ -29,6 +29,9 @@ footer{
     padding: 0 0 40px 0;
     span{
      font-size: 14px;
+     i{
+      margin-right: 5px;
+     }
     }
    }
   }
@@ -38,12 +41,12 @@ footer{
    flex-direction: column;
    justify-content: space-between;
    gap: 40px;
-   .foo-links{
+   ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
     
-    span>a{
+    li>a{
     color: $white;
      font-size: 16px; 
      text-decoration: underline;

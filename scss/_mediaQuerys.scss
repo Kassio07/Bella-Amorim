@@ -225,7 +225,7 @@ section {
       .foo-row2 {
         flex-direction: row;
         align-items: center;
-        .foo-links {
+        .ul {
           flex-direction: row;
           flex-wrap: wrap;
           padding: 40px 0;
@@ -410,7 +410,7 @@ section {
       .foo-row2 {
         flex-direction: row;
         align-items: center;
-        .foo-links {
+        ul {
           flex-direction: row;
           flex-wrap: wrap;
           padding: 40px 0;
@@ -498,7 +498,7 @@ section {
       font-size: 18px;
     }
     h3 {
-      font-size: 22px;
+      font-size: 16px;
     }
   }
 
