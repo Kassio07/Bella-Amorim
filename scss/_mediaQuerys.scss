@@ -211,6 +211,35 @@ section {
       }
     }
   }
+
+  // footer
+
+  footer {
+    .footer-container {
+      .foo-row1 {
+        flex-direction: row;
+        padding: 0 0 40px 0;
+        gap: 50px;
+      }
+
+      .foo-row2 {
+        flex-direction: row;
+        align-items: center;
+        .foo-links {
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 40px 0;
+        }
+        .copy {
+          text-align: center;
+          min-width: 200px;
+          > strong {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // ========================================================
@@ -348,6 +377,54 @@ section {
       }
     }
   }
+
+  // Contato
+  #contact {
+    .content-contato {
+      .contact-box1 {
+        flex-direction: row;
+        .box1-row {
+          .btn-about {
+            display: flex;
+            margin-top: 40px;
+          }
+        }
+        .box2-row {
+          flex: 0.5;
+        }
+      }
+    }
+  }
+
+  
+  // footer
+
+  footer {
+    .footer-container {
+      .foo-row1 {
+        flex-direction: row;
+        padding: 0 0 40px 0;
+        justify-content: space-between;
+      }
+
+      .foo-row2 {
+        flex-direction: row;
+        align-items: center;
+        .foo-links {
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 40px 0;
+        }
+        .copy {
+          text-align: center;
+          min-width: 200px;
+          > strong {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // ==================================================
@@ -420,7 +497,7 @@ section {
     > p {
       font-size: 18px;
     }
-    h3{
+    h3 {
       font-size: 22px;
     }
   }
@@ -460,6 +537,27 @@ section {
         .service-card {
           max-width: 435px;
           height: 500px;
+        }
+      }
+    }
+  }
+
+  // Contato
+  #contact {
+    .content-contato {
+      flex-direction: row;
+      align-items: center;
+      .contact-box1 {
+        flex-direction: row;
+
+        .box2-row {
+          flex: 0.5;
+        }
+      }
+      .contact-box2 {
+        flex: 1;
+        iframe {
+          height: 400px;
         }
       }
     }

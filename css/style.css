@@ -328,12 +328,25 @@ header .hiro-content .hiro-img img {
 #contact .content-contato .contact-box1 {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  color: #666;
+}
+#contact .content-contato .contact-box1 div > div > h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#contact .content-contato .contact-box1 div > div > h4 > i {
+  margin-right: 7px;
+  color: #003C1A;
+  font-size: 18px;
 }
 #contact .content-contato .contact-box1 .box1-row,
 #contact .content-contato .contact-box1 .box2-row {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 #contact .content-contato .contact-box1 .box1-row h4,
 #contact .content-contato .contact-box1 .box2-row h4 {
@@ -341,22 +354,139 @@ header .hiro-content .hiro-img img {
   font-weight: 700;
   font-size: 18px;
 }
-#contact .content-contato .contact-box1 .box1-row {
-  gap: 30px;
+#contact .content-contato .contact-box1 .box1-row > div {
+  gap: 10px;
 }
 #contact .content-contato .contact-box1 .box1-row .box-text1 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 #contact .content-contato .contact-box1 .box1-row .box-text1 span {
-  font-size: 12px;
+  font-size: 14px;
 }
 #contact .content-contato .contact-box1 .box1-row .box-text1 span:nth-child(even) {
   color: #003C1A;
   font-weight: 600;
   font-size: 14px;
 }
+#contact .content-contato .contact-box1 .box1-row .box-text2 {
+  display: flex;
+  flex-direction: column;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text2 :nth-child(even) {
+  color: #666;
+  font-size: 14px;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text2 :last-child {
+  color: #003C1A;
+  font-size: 14px;
+  font-weight: 700;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text2 :last-child > i {
+  color: rgba(0, 0, 255, 0.604);
+  font-size: 16px;
+  margin-right: 7px;
+}
+#contact .content-contato .contact-box1 .box1-row .btn-about {
+  display: none;
+}
+#contact .content-contato .contact-box1 .box1-row .btn-about .btn-session {
+  background-color: #003C1A;
+  color: #fff;
+}
+#contact .content-contato .contact-box1 .box1-row .btn-about .btn-session:hover {
+  background-color: rgb(23, 73, 23);
+}
+#contact .content-contato .contact-box1 .box2-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact .content-contato .contact-box1 .box2-row .box-text2 {
+  display: flex;
+  gap: 15px;
+}
+#contact .content-contato .contact-box1 .box2-row .box-text2 > div {
+  display: flex;
+  flex-direction: row;
+}
+#contact .content-contato .contact-box1 .box2-row .box-text2 > div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+#contact .content-contato .contact-box1 .box2-row .box-text2 > div span > img {
+  width: 20px;
+  height: 50px;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+#contact .content-contato .contact-box1 .box2-row .box-text2 > div span > img:hover {
+  width: 30px;
+}
+#contact .content-contato .contact-box2 {
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #000;
+  padding: 70px 0 0 0;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-container .foo-row1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid #fff;
+}
+footer .footer-container .foo-row1 .foo-text-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 500px;
+}
+footer .footer-container .foo-row1 .foo-text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #fff;
+  padding: 0 0 40px 0;
+}
+footer .footer-container .foo-row1 .foo-text-info span {
+  font-size: 14px;
+}
+footer .footer-container .foo-row2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+footer .footer-container .foo-row2 .foo-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-container .foo-row2 .foo-links span > a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: underline;
+}
+footer .footer-container .foo-row2 .copy {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 7px 0;
+}
+footer .footer-container .foo-row2 .copy > strong {
+  font-size: 12px;
+}
+
 .division {
   background-image: url("../images/divisor-seccao.jpg");
   background-size: cover;
@@ -607,6 +737,27 @@ section {
   #services .content-service .service-cards .service-card > p {
     font-size: 1rem;
   }
+  footer .footer-container .foo-row1 {
+    flex-direction: row;
+    padding: 0 0 40px 0;
+    gap: 50px;
+  }
+  footer .footer-container .foo-row2 {
+    flex-direction: row;
+    align-items: center;
+  }
+  footer .footer-container .foo-row2 .foo-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+  footer .footer-container .foo-row2 .copy {
+    text-align: center;
+    min-width: 200px;
+  }
+  footer .footer-container .foo-row2 .copy > strong {
+    font-size: 12px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -706,6 +857,37 @@ section {
     max-width: 350px;
     height: 470px;
   }
+  #contact .content-contato .contact-box1 {
+    flex-direction: row;
+  }
+  #contact .content-contato .contact-box1 .box1-row .btn-about {
+    display: flex;
+    margin-top: 40px;
+  }
+  #contact .content-contato .contact-box1 .box2-row {
+    flex: 0.5;
+  }
+  footer .footer-container .foo-row1 {
+    flex-direction: row;
+    padding: 0 0 40px 0;
+    justify-content: space-between;
+  }
+  footer .footer-container .foo-row2 {
+    flex-direction: row;
+    align-items: center;
+  }
+  footer .footer-container .foo-row2 .foo-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+  footer .footer-container .foo-row2 .copy {
+    text-align: center;
+    min-width: 200px;
+  }
+  footer .footer-container .foo-row2 .copy > strong {
+    font-size: 12px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -787,6 +969,22 @@ section {
   #services .content-service .service-cards .service-card {
     max-width: 435px;
     height: 500px;
+  }
+  #contact .content-contato {
+    flex-direction: row;
+    align-items: center;
+  }
+  #contact .content-contato .contact-box1 {
+    flex-direction: row;
+  }
+  #contact .content-contato .contact-box1 .box2-row {
+    flex: 0.5;
+  }
+  #contact .content-contato .contact-box2 {
+    flex: 1;
+  }
+  #contact .content-contato .contact-box2 iframe {
+    height: 400px;
   }
 }
 @media (min-width: 1200px) {

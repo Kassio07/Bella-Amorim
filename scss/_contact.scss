@@ -9,38 +9,114 @@
       flex: 1;
     }
     .contact-box1 {
-     display: flex;
-     flex-direction: column;
-
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: #666;
+      div > div > h4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > i {
+          margin-right: 7px;
+          color: $dark-green;
+          font-size: 18px;
+        }
+      }
       .box1-row,
       .box2-row {
-       flex: 1;
-       display: flex;
-       flex-direction: column;
-       h4{
-        color: $Dusty-Rose;
-        font-weight: 700;
-        font-size: 18px;
-       }
-      }
-      .box1-row{
-       gap: 30px;
-       .box-text1{
+        flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        span{
-         font-size: 12px;
+        gap: 20px;
+        h4 {
+          color: $Dusty-Rose;
+          font-weight: 700;
+          font-size: 18px;
         }
-        span:nth-child(even){
-         color: $dark-green;
-         font-weight: 600;
-         font-size: 14px;
+      }
+      .box1-row {
+        > div {
+          gap: 10px;
         }
-       }
+        .box-text1 {
+          display: flex;
+          flex-direction: column;
+          span {
+            font-size: 14px;
+          }
+          span:nth-child(even) {
+            color: $dark-green;
+            font-weight: 600;
+            font-size: 14px;
+          }
+        }
+        .box-text2 {
+          display: flex;
+          flex-direction: column;
+          :nth-child(even) {
+            color: #666;
+            font-size: 14px;
+          }
+          :last-child {
+            color: $dark-green;
+            font-size: 14px;
+            font-weight: 700;
+            > i {
+              color: rgba(0, 0, 255, 0.604);
+              font-size: 16px;
+              margin-right: 7px;
+            }
+          }
+        }
+
+        .btn-about {
+          display: none;
+          .btn-session{
+            background-color: $dark-green;
+            color: $white;
+
+            &:hover{
+              background-color:rgb(23, 73, 23);
+            }
+          }
+        }
+      }
+
+      .box2-row {
+        > div {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .box-text2 {
+          display: flex;
+          gap: 15px;
+          > div {
+            display: flex;
+            flex-direction: row;
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              > img {
+                width: 20px;
+                height: 50px;
+                cursor: pointer;
+                transition: ease 0.5s;
+                &:hover {
+                  width: 30px;
+                }
+              }
+            }
+          }
+        }
       }
     }
     .contact-box2 {
+      // Mapa
+      margin-top: 40px;
     }
   }
 }
