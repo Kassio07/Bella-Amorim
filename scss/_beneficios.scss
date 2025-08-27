@@ -1,0 +1,31 @@
+#beneficios{
+
+ .beneficios-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  .beneficios-card{
+   background-color: $Pale-Pink;
+   width: 100%;
+   max-width: 400px;
+   padding: 30px 30px;
+   border-radius: 10px;
+
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   i{
+    color: $Dusty-Rose;
+    font-size: 18px;
+   }
+
+   p{
+    color: $dark-green;
+    font-weight: 600;
+    font-size: 14px;
+   }
+  }
+ }
+}

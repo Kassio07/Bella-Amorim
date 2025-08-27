@@ -45,6 +45,15 @@ header {
       > span {
         font-size: 16px;
       }
+      .hiro-GroupIcons-img{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 30px;
+        >img{
+          width: 70px;
+        }
+      }
     }
 
     .hiro-img {

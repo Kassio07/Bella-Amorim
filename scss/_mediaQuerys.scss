@@ -63,12 +63,15 @@ section {
         p {
           font-size: 9px;
         }
-        >h3{
+        > h3 {
           font-size: 22px;
         }
       }
       .division-col-2 {
+<<<<<<< HEAD
         justify-content: center;
+=======
+>>>>>>> 7fd9002d48a86350dbcaea4130c55c65b4b66516
         .btn-session {
           width: 80%;
           padding: 5px 30px;
@@ -78,12 +81,7 @@ section {
     }
   }
   // About
-  .about {
-    .title-session {
-      > p {
-        font-size: 22px;
-      }
-    }
+  #about {
     .about-content {
       .about-img {
         img {
@@ -92,16 +90,14 @@ section {
       }
       .about-text {
         h2 {
-          font-size: 24px;
+          font-size: 28px;
         }
       }
     }
   }
 }
 
-
 // =====================================================
-
 
 @media (min-width: 577px) and (max-width: 767px) {
   .destaqueXG {
@@ -113,7 +109,7 @@ section {
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .btn-session {
@@ -124,7 +120,7 @@ section {
     .hiro-content {
       flex-direction: column;
       height: 100vh;
-      .hiro-text{
+      .hiro-text {
         padding-bottom: 40px;
       }
       .hiro-img {
@@ -137,11 +133,11 @@ section {
   // Divisão
   .division {
     .content-division {
-      .division-col-1{
-        >p{
+      .division-col-1 {
+        > p {
           font-size: 11px;
         }
-        h3{
+        h3 {
           font-size: 26px;
         }
       }
@@ -160,6 +156,94 @@ section {
       }
     }
   }
+  // before-after
+  #before-after {
+    .content-before-after {
+      .content-title-before-after {
+        h3 {
+          font-size: 18px;
+        }
+      }
+
+      .content-img-before-after {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        > img {
+          max-width: 300px;
+          min-width: 200px;
+        }
+      }
+    }
+  }
+  // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .beneficios-card {
+        max-width: 340px;
+      }
+    }
+  }
+
+  // services
+  #services {
+    .content-service {
+      .service-cards {
+        display: flex;
+        flex-direction: row;
+        .service-card {
+          max-width: 300px;
+          height: 450px;
+          > p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+
+  footer {
+    .footer-container {
+      .foo-row1 {
+        flex-direction: row;
+        padding: 0 0 40px 0;
+        gap: 50px;
+      }
+
+      .foo-row2 {
+        flex-direction: row;
+        align-items: center;
+        .ul {
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 40px 0;
+        }
+        .copy {
+          text-align: center;
+          min-width: 200px;
+          > strong {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // ========================================================
@@ -167,6 +251,10 @@ section {
 @media (min-width: 768px) {
   .container {
     padding: 0 24px;
+  }
+
+  p {
+    font-size: 18px;
   }
   // Hiro
   header {
@@ -192,8 +280,13 @@ section {
         justify-content: center;
         width: 100%;
         flex: 1;
-        >img{
-          width:60%;
+        > img {
+          width: 60%;
+        }
+      }
+      .hiro-GroupIcons-img {
+        > img {
+          width: 80px !important;
         }
       }
     }
@@ -217,27 +310,121 @@ section {
     }
   }
   // About
-  .about {
-    .title-session {
-      > p {
-        font-size: 24px;
-      }
-    }
-    .about-content{
+  #about {
+    .about-content {
       flex-direction: row;
       gap: 25px;
-      .about-img{
+      .about-img {
         flex: 1;
-        >img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        > img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
         }
       }
-      .about-text{
+      .about-text {
         flex: 1;
-        h2{
-          font-size: 26px;
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
+
+  // before-after
+  #before-after {
+    .content-before-after {
+      .content-img-before-after {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        > img {
+          max-width: 400px;
+          min-width: 250px;
+        }
+      }
+    }
+  }
+
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .beneficios-card {
+        max-width: 400px;
+      }
+    }
+  }
+
+  // services
+  #services {
+    .content-service {
+      .service-cards {
+        flex-direction: row;
+        .service-card {
+          max-width: 350px;
+          height: 470px;
+        }
+      }
+    }
+  }
+
+  // Contato
+  #contact {
+    .content-contato {
+      .contact-box1 {
+        flex-direction: row;
+        .box1-row {
+          .btn-about {
+            display: flex;
+            margin-top: 40px;
+          }
+        }
+        .box2-row {
+          flex: 0.5;
+        }
+      }
+    }
+  }
+
+  
+  // footer
+
+  footer {
+    .footer-container {
+      .foo-row1 {
+        flex-direction: row;
+        padding: 0 0 40px 0;
+        justify-content: space-between;
+      }
+
+      .foo-row2 {
+        flex-direction: row;
+        align-items: center;
+        ul {
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 40px 0;
+        }
+        .copy {
+          text-align: center;
+          min-width: 200px;
+          > strong {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -264,24 +451,23 @@ section {
     color: $dark-green;
   }
 
-  header{
+  header {
     gap: 0;
-    .hiro-content{
+    .hiro-content {
       flex-direction: row;
       height: 100vh;
-      .hiro-text{
+      .hiro-text {
         justify-content: center;
 
-        h1{
+        h1 {
           font-size: 42px;
         }
-        p{
+        p {
           font-size: 18px;
         }
       }
-      .hiro-img{
-     
-        >img{
+      .hiro-img {
+        > img {
           width: 100%;
           align-self: flex-end;
         }
@@ -289,26 +475,100 @@ section {
     }
   }
   // Divisor
-  .division{
-    .content-division{
-      .division-col-1{
-        p{
+  .division {
+    .content-division {
+      .division-col-1 {
+        p {
           font-size: 14px;
         }
-        h3{
+        h3 {
           font-size: 28px;
         }
       }
-      .division-col-2{
+      .division-col-2 {
         display: flex;
         justify-content: flex-end;
+      }
+    }
+  }
+  // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  // before-after
+  #before-after {
+    .content-before-after {
+      .content-img-before-after {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        > img {
+          max-width: 500px;
+          min-width: 300px;
+        }
+      }
+    }
+  }
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .beneficios-card {
+        max-width: 450px;
+      }
+    }
+  }
+
+  // services
+  #services {
+    .content-service {
+      .service-cards {
+        flex-direction: row;
+        justify-content: space-around;
+        .service-card {
+          max-width: 435px;
+          height: 500px;
+        }
+      }
+    }
+  }
+
+  // Contato
+  #contact {
+    .content-contato {
+      flex-direction: row;
+      align-items: center;
+      .contact-box1 {
+        flex-direction: row;
+
+        .box2-row {
+          flex: 0.5;
+        }
+      }
+      .contact-box2 {
+        flex: 1;
+        iframe {
+          height: 400px;
+        }
       }
     }
   }
 }
 
 // ==================================================
-
 
 @media (min-width: 1200px) {
   .container {
@@ -329,16 +589,35 @@ section {
     color: $dark-green;
   }
   // Divisor
-  .division{
-    .content-division{
+  .division {
+    .content-division {
       align-items: center;
-      .division-col-1{
-        p{
+      .division-col-1 {
+        p {
           font-size: 14px;
         }
-        h3{
+        h3 {
           font-size: 32px;
         }
+      }
+    }
+  }
+  // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+  }
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      .beneficios-card {
+        max-width: 350px;
       }
     }
   }
@@ -349,7 +628,7 @@ section {
 @media (min-width: 1400px) {
   .container {
     max-width: 1400px;
-    padding: 0 10PX;
+    padding: 0 10px;
   }
 
   .destaqueXG {
@@ -364,34 +643,34 @@ section {
     font-size: 32px;
     color: $dark-green;
   }
-  header{
-    .hiro-content{
-      .hiro-text{
-        h1{
+  header {
+    .hiro-content {
+      .hiro-text {
+        h1 {
           font-size: 52px;
         }
       }
-      .hiro-img{
-        img{
+      .hiro-img {
+        img {
           width: 100%;
-
         }
       }
     }
   }
-    // Divisor
-  .division{
-    .content-division{
-      .division-col-1{
-        p{
+  // Divisor
+  .division {
+    .content-division {
+      .division-col-1 {
+        p {
           font-size: 14px;
         }
-        h3{
+        h3 {
           font-size: 38px;
         }
       }
     }
   }
+<<<<<<< HEAD
     // About
   .about{
     .about-content{
@@ -399,9 +678,40 @@ section {
       flex: 1;
       >img{
         width: 75%;
+=======
+  // About
+  #about {
+    .about-content {
+      .about-img {
+        flex: 1;
+        > img {
+          width: 80%;
+        }
+>>>>>>> 7fd9002d48a86350dbcaea4130c55c65b4b66516
       }
-     } 
+      .about-text {
+        // flex: 1;
+      }
+    }
+  }
+  // title seções  =======================================================
+  .title-session {
+    > div {
+      h2 {
+        font-size: 22px;
+      }
+    }
+    > p {
+      font-size: 18px;
     }
   }
 
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      .beneficios-card {
+        max-width: 450px;
+      }
+    }
+  }
 }
