@@ -92,6 +92,20 @@ section {
       }
     }
   }
+
+    // testemunhas
+  #testemunhas{
+    .content-testemunhas {
+      .slider-container{
+        #prev, #next{
+          display: none;
+        }
+        .slider--width{
+
+        }
+      }
+    }
+  } 
 }
 
 // =====================================================
@@ -212,6 +226,7 @@ section {
       }
     }
   }
+ 
 
   // footer
 

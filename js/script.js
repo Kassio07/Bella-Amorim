@@ -2,6 +2,8 @@
 let c = (e) => document.querySelector(e);
 let cs = (e) => document.querySelectorAll(e);
 
+// Slide auto Testemunhas-----------------------------------
+
 let totalSlideItem = cs('.slider--item').length; // Qtde de item
 let widthItem = c('.slider--item').clientWidth; // Largura do item
 let slideWidth = c('.slider--width').clientWidth; // Largura do width(scroll)
@@ -29,9 +31,10 @@ function updateMargin(){
 c('.slider--width').style.transform = `translateX(-${currentSlide * widthItem}px)`;
 }
 
-setInterval(goNext, 7000);
+setInterval(goNext, 10000);
 
-// Arrow up to
+// Arrow up to----------------------------------------------
+
 window.addEventListener("scroll", ()=>{
     const arrow = c('.arrow-to');
     if(window.scrollY > 700){
@@ -49,7 +52,7 @@ window.addEventListener("scroll", ()=>{
 })
 
 
-// Slide touch
+// Slide touch--------------------------------------------------
 
 // controls
 let slider = c(".slider--width");
