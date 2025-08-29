@@ -410,19 +410,19 @@ header .hiro-content .hiro-img img {
   display: flex;
   flex-direction: row;
 }
-#contact .content-contato .contact-box1 .box2-row .box-text2 > div span {
+#contact .content-contato .contact-box1 .box2-row .box-text2 > div a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
 }
-#contact .content-contato .contact-box1 .box2-row .box-text2 > div span > img {
+#contact .content-contato .contact-box1 .box2-row .box-text2 > div a img {
   width: 20px;
   height: 50px;
   cursor: pointer;
   transition: ease 0.5s;
 }
-#contact .content-contato .contact-box1 .box2-row .box-text2 > div span > img:hover {
+#contact .content-contato .contact-box1 .box2-row .box-text2 > div a img:hover {
   width: 30px;
 }
 #contact .content-contato .contact-box2 {
@@ -621,7 +621,7 @@ footer .footer-container .foo-row2 .copy > strong {
 }
 .arrow-to i {
   font-size: 30px;
-  color: #E28D8A;
+  color: #666;
 }
 
 section {

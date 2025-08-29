@@ -44,6 +44,7 @@
           flex-direction: column;
           span {
             font-size: 14px;
+            
           }
           span:nth-child(even) {
             color: $dark-green;
@@ -72,12 +73,12 @@
 
         .btn-about {
           display: none;
-          .btn-session{
+          .btn-session {
             background-color: $dark-green;
             color: $white;
 
-            &:hover{
-              background-color:rgb(23, 73, 23);
+            &:hover {
+              background-color: rgb(23, 73, 23);
             }
           }
         }
@@ -95,12 +96,12 @@
           > div {
             display: flex;
             flex-direction: row;
-            span {
+            a {
               display: flex;
               justify-content: center;
               align-items: center;
               width: 40px;
-              > img {
+              img {
                 width: 20px;
                 height: 50px;
                 cursor: pointer;

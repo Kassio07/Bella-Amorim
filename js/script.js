@@ -29,7 +29,7 @@ function updateMargin(){
 c('.slider--width').style.transform = `translateX(-${currentSlide * widthItem}px)`;
 }
 
-setInterval(goNext, 4000);
+setInterval(goNext, 7000);
 
 // Arrow up to
 window.addEventListener("scroll", ()=>{
@@ -47,6 +47,49 @@ window.addEventListener("scroll", ()=>{
         })
     })
 })
+
+
+// Slide touch
+
+// controls
+let slider = c(".slider--width");
+let slides = cs(".slider--item");
+let startX = 0;
+let endX = 0;
+let currentIndex = 0;
+
+function showSlide(index){
+
+    // Não deixa voltar além do primeiro
+    if(index < 0){
+        index = 0;
+    }
+    // Não deixa passar do último
+    if(index >= slides.length){
+        index = slides.length -1;
+    }
+    currentIndex = index;
+    slider.style.transform = `translate(${-310 * index}px)`;
+}   
+
+// Captura o INICIO do toque 
+slider.addEventListener("touchstart", (e)=>{
+    startX = e.touches[0].clientX;
+});
+
+// Captura o FIM do toque
+slider.addEventListener("touchend", (e) =>{
+    endX = e.changedTouches[0].clientX;
+    if(startX - endX > 50){
+        // Desliza para esquerda -> Próximo
+        showSlide(currentIndex + 1)
+    }else if(endX - startX > 50){
+        // Desliza para a direita -> anterior
+        showSlide(currentIndex -1);
+    }
+});
+
+
 
 
 
