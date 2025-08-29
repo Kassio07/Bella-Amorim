@@ -32,6 +32,7 @@
     }
 
     .division-col-2 {
+      display: flex;
       flex: 1;
       display: flex;
       justify-content: center;
@@ -107,5 +108,45 @@
     text-align: start;
     padding-bottom: 0px;
     font-size: 1rem;
+  }
+}
+
+// Btn whatsApp
+.btn-whats{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 60px;
+  z-index: 999;
+
+  animation-name: btnWhatsAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+
+@keyframes btnWhatsAnimation{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-40%);
+  }
+}
+
+// Arrow up to
+.arrow-to{
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  cursor: pointer;
+  display: none;
+
+  i{
+    font-size: 30px;
+    color: $Salmon;
   }
 }

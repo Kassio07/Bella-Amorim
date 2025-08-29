@@ -31,5 +31,22 @@ c('.slider--width').style.transform = `translateX(-${currentSlide * widthItem}px
 
 setInterval(goNext, 4000);
 
+// Arrow up to
+window.addEventListener("scroll", ()=>{
+    const arrow = c('.arrow-to');
+    if(window.scrollY > 700){
+        arrow.style.display = 'block';
+    }else{
+        arrow.style.display = 'none';
+    }
+
+    arrow.addEventListener('click', ()=>{
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        })
+    })
+})
+
 
 

@@ -43,7 +43,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 70px;
+  gap: 100px;
   background-image: url("../images/imagem-hiro-fundo.jpg");
   background-size: cover;
   background-position: center;
@@ -521,6 +521,7 @@ footer .footer-container .foo-row2 .copy > strong {
   text-transform: uppercase;
 }
 .division .content-division .division-col-2 {
+  display: flex;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -589,6 +590,40 @@ footer .footer-container .foo-row2 .copy > strong {
   font-size: 1rem;
 }
 
+.btn-whats {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 60px;
+  z-index: 999;
+  animation-name: btnWhatsAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes btnWhatsAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+.arrow-to {
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  cursor: pointer;
+  display: none;
+}
+.arrow-to i {
+  font-size: 30px;
+  color: #E28D8A;
+}
+
 section {
   padding: 80px 0;
 }
@@ -652,6 +687,9 @@ section {
   }
   .division .content-division .division-col-1 > h3 {
     font-size: 22px;
+  }
+  .division .content-division .division-col-2 {
+    justify-content: center;
   }
   .division .content-division .division-col-2 .btn-session {
     width: 80%;
@@ -819,7 +857,7 @@ section {
     flex: 1;
   }
   #about .about-content .about-img > img {
-    width: 100%;
+    width: 80%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1022,9 +1060,6 @@ section {
   .title-session > p {
     font-size: 18px;
   }
-  #beneficios .beneficios-content .beneficios-card {
-    max-width: 350px;
-  }
 }
 @media (min-width: 1400px) {
   .container {
@@ -1055,19 +1090,19 @@ section {
   .division .content-division .division-col-1 h3 {
     font-size: 38px;
   }
-  #about .about-content .about-img {
+  .about .about-content .about-img {
     flex: 1;
   }
-  #about .about-content .about-img > img {
-    width: 80%;
+  .about .about-content .about-img > img {
+    width: 75%;
   }
-  .title-session > div h2 {
+  .about .title-session > div h2 {
     font-size: 22px;
   }
-  .title-session > p {
+  .about .title-session > p {
     font-size: 18px;
   }
-  #beneficios .beneficios-content .beneficios-card {
+  .about #beneficios .beneficios-content .beneficios-card {
     max-width: 450px;
   }
 }
