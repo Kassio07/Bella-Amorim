@@ -254,7 +254,7 @@ header .hiro-content .hiro-img img {
 #testemunhas .content-testemunhas .slider-container button {
   background-color: transparent;
   position: absolute;
-  z-index: 999;
+  z-index: 98;
 }
 #testemunhas .content-testemunhas .slider-container #prev {
   left: 0;
