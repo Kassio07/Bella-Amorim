@@ -29,30 +29,29 @@ function goNext() {
   }
   updateMargin();
 }
-
-// Função de margin no container dos itens
 function updateMargin() {
   sliderWidthContainer.style.transform = `translateX(-${currentSlide * widthItem}px)`;
 }
 
 // Pega a largura total da tela do usuário
 let larguraTela = window.innerWidth;
-// Roda essa função automatica somente quando a tela do usuário for maior que 577
+// Roda essa função automatica somente quando a tela do usuário for maior que 577px
 if(larguraTela > 577){
-    setInterval(goNext, 5000);
+    setInterval(goNext, 3000);
 }
 
 
-// Arrow up to - Btm de voltar ao topo do site ----------------------------------------------
+// Arrow up to - Btn de voltar ao topo do site ----------------------------------------------
 
 window.addEventListener("scroll", () => {
   const arrow = c(".arrow-to");
+  // Esconde a seta no topo da página
   if (window.scrollY > 700) {
     arrow.style.display = "block";
   } else {
     arrow.style.display = "none";
   }
-
+  // Roda a função pra subir pro topo
   arrow.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
@@ -79,7 +78,7 @@ function showSlide(index) {
     index = slides.length - 1;
   }
   currentIndex = index;
-  slider.style.transform = `translate(${-310 * index}px)`;
+  slider.style.transform = `translate(${-330 * index}px)`;
 }
 
 // Captura o INICIO do toque
