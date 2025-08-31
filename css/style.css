@@ -662,7 +662,7 @@ section {
   }
   header .hiro-content {
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
   }
   header .hiro-content .hiro-text {
     justify-content: flex-start;
