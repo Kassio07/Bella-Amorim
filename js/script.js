@@ -84,7 +84,7 @@ function showSlide(index) {
 // Captura o INICIO do toque
 slider.addEventListener("touchstart", (e) => {
   startX = e.touches[0].clientX;
-});
+}, {passive: true});
 
 // Captura o FIM do toque
 slider.addEventListener("touchend", (e) => {
@@ -96,4 +96,4 @@ slider.addEventListener("touchend", (e) => {
     // Desliza para a direita -> anterior
     showSlide(currentIndex - 1);
   }
-});
+}, {passive:true});

@@ -660,6 +660,9 @@ section {
   p {
     font-size: 1rem;
   }
+  header {
+    background-image: url("../images/imagem-hiro-fundo-mobil.webp");
+  }
   header .hiro-content {
     flex-direction: column;
     height: 100dvh;
