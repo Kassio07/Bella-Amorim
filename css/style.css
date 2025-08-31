@@ -133,7 +133,8 @@ header .hiro-content .hiro-img img {
 }
 #before-after .content-before-after .content-img-before-after > img {
   flex: 1;
-  width: 80%;
+  max-width: 100%;
+  height: auto;
 }
 
 #about .about-content {
@@ -1152,6 +1153,7 @@ body {
 p {
   color: #666;
   font-weight: 500;
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
