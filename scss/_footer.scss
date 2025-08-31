@@ -40,7 +40,9 @@ footer{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   gap: 40px;
+   align-items: center;
+   text-align: center;
+   gap: 100px;
    ul{
     display: flex;
     flex-direction: column;
