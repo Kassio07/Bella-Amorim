@@ -59,7 +59,8 @@ header {
     .hiro-img {
       display: flex;
       img {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         position: relative;
       }
     }

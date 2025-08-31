@@ -100,7 +100,8 @@ header .hiro-content .hiro-img {
   display: flex;
 }
 header .hiro-content .hiro-img img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   position: relative;
 }
 
