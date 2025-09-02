@@ -709,7 +709,8 @@ section {
   #about .about-content .about-text h2 {
     font-size: 28px;
   }
-  #testemunhas .content-testemunhas .slider-container #prev, #testemunhas .content-testemunhas .slider-container #next {
+  #testemunhas .content-testemunhas .slider-container #prev,
+  #testemunhas .content-testemunhas .slider-container #next {
     display: none;
   }
 }
@@ -749,7 +750,7 @@ section {
     justify-content: center;
   }
   .about-content .about-img img {
-    width: 80%;
+    width: 100%;
   }
   #before-after .content-before-after .content-title-before-after h3 {
     font-size: 18px;
@@ -1100,19 +1101,19 @@ section {
   .division .content-division .division-col-1 h3 {
     font-size: 38px;
   }
-  .about .about-content .about-img {
+  #about .about-content .about-img {
     flex: 1;
   }
-  .about .about-content .about-img > img {
-    width: 75%;
+  #about .about-content .about-img > img {
+    width: 65%;
   }
-  .about .title-session > div h2 {
+  #about .title-session > div h2 {
     font-size: 22px;
   }
-  .about .title-session > p {
+  #about .title-session > p {
     font-size: 18px;
   }
-  .about #beneficios .beneficios-content .beneficios-card {
+  #beneficios .beneficios-content .beneficios-card {
     max-width: 450px;
   }
 }

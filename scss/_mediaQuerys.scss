@@ -94,19 +94,19 @@ section {
     }
   }
 
-    // testemunhas
-  #testemunhas{
+  // testemunhas
+  #testemunhas {
     .content-testemunhas {
-      .slider-container{
-        #prev, #next{
+      .slider-container {
+        #prev,
+        #next {
           display: none;
         }
-        .slider--width{
-
+        .slider--width {
         }
       }
     }
-  } 
+  }
 }
 
 // =====================================================
@@ -164,7 +164,7 @@ section {
   .about-content {
     .about-img {
       img {
-        width: 80%;
+        width: 100%;
       }
     }
   }
@@ -227,7 +227,6 @@ section {
       }
     }
   }
- 
 
   // footer
 
@@ -675,15 +674,15 @@ section {
     }
   }
   // About
-  .about {
+  #about {
     .about-content {
       .about-img {
         flex: 1;
         > img {
-          width: 75%;
+          width: 65%;
         }
       }
-    } 
+    }
     // title seções  =======================================================
     .title-session {
       > div {
@@ -695,13 +694,13 @@ section {
         font-size: 18px;
       }
     }
+  }
 
-    // Beneficios
-    #beneficios {
-      .beneficios-content {
-        .beneficios-card {
-          max-width: 450px;
-        }
+  // Beneficios
+  #beneficios {
+    .beneficios-content {
+      .beneficios-card {
+        max-width: 450px;
       }
     }
   }
