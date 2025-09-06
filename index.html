@@ -77,7 +77,14 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="preload"
+      href="/css/style.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/css/style.min.css" /></noscript>
+
     <!-- JS -->
     <script src="./js/script.js" defer></script>
     <script type="application/ld+json">
