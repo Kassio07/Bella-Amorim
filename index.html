@@ -60,16 +60,24 @@
     <script
       src="https://kit.fontawesome.com/b9c3a7a3e3.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <!-- Bootstrap -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css"
+    /></noscript> 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" /> 
     <!-- JS -->
     <script src="./js/script.js" defer></script>
     <script type="application/ld+json">
@@ -176,7 +184,8 @@
       <div class="btn-whats">
         <a
           href="https://wa.me/5511964840403?text=Ol%C3%A1%20Bella!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o."
-          target="_blank" title="Entre em contato no WhatsApp"
+          target="_blank"
+          title="Entre em contato no WhatsApp"
           ><img src="images/whatsapp.webp" alt="Icone do whatsapp"
         /></a>
       </div>
@@ -198,7 +207,8 @@
               <a
                 href="https://wa.me/5511964840403?text=Ol%C3%A1%20Bella!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o."
                 class="btn-session"
-                target="_blank" title="Entre em contato no WhatsApp"
+                target="_blank"
+                title="Entre em contato no WhatsApp"
                 >Agende um Horário Agora <i class="fa-brands fa-whatsapp"></i
               ></a>
             </div>
@@ -226,9 +236,18 @@
               <h3>Veja: Resultados Reais</h3>
             </div>
             <div class="content-img-before-after">
-              <img src="images/preenchimento01.webp" alt="Preenchimento labial" />
-              <img src="images/preenchimento-labial-03.png" alt="Preenchimento labial" />
-              <img src="images/preenchimento-labial-02.webp" alt="Preenchimento labial" />
+              <img
+                src="images/preenchimento01.webp"
+                alt="Preenchimento labial"
+              />
+              <img
+                src="images/preenchimento-labial-03.png"
+                alt="Preenchimento labial"
+              />
+              <img
+                src="images/preenchimento-labial-02.webp"
+                alt="Preenchimento labial"
+              />
             </div>
           </div>
         </div>
@@ -536,10 +555,7 @@
         <div class="container">
           <div class="content-division">
             <div class="division-col-1">
-              <p>
-              Cuidar de si é um ato de
-                amor-próprio.
-              </p>
+              <p>Cuidar de si é um ato de amor-próprio.</p>
               <h3 class="destaqueXG">
                 <strong>Sinta-se confiante em cada detalhe</strong>
               </h3>
@@ -604,7 +620,6 @@
                     atenciosa! Amei tudo ❤️.
                     <i class="fa-solid fa-quote-right"></i>
                   </div>
-                  
                 </div>
                 <div class="slider--item">
                   <div class="star">
@@ -622,7 +637,6 @@
                     confio na Dra. Bella Amorim para mexer no meu rosto!!!
                     <i class="fa-solid fa-quote-right"></i>
                   </div>
-                  
                 </div>
                 <div class="slider--item">
                   <div class="star">
@@ -638,7 +652,6 @@
                     com meu rostinho botocado kkkkkkkk amoooooo ❤️
                     <i class="fa-solid fa-quote-right"></i>
                   </div>
-                  
                 </div>
                 <div class="slider--item">
                   <div class="star">
@@ -655,7 +668,6 @@
                     muito bem!
                     <i class="fa-solid fa-quote-right"></i>
                   </div>
-                  
                 </div>
                 <div class="slider--item">
                   <div class="star">
@@ -673,7 +685,6 @@
                     uma mão ótima de fadas
                     <i class="fa-solid fa-quote-right"></i>
                   </div>
-                  
                 </div>
                 <div class="slider--item">
                   <div class="star">
@@ -684,10 +695,10 @@
                     ><i class="fa-solid fa-star"></i>
                   </div>
                   <div class="text-card">
-                    <i class="fa-solid fa-quote-left"></i>Amei!!! Senti diferença até na respiração. Melhorou muito.
+                    <i class="fa-solid fa-quote-left"></i>Amei!!! Senti
+                    diferença até na respiração. Melhorou muito.
                     <i class="fa-solid fa-quote-right"></i>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -812,7 +823,8 @@
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="Localização da clínica"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização da clínica"
               ></iframe>
             </div>
           </div>
