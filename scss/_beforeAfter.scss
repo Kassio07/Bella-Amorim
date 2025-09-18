@@ -1,35 +1,32 @@
-#before-after{
+#before-after {
+  .content-before-after {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    > div {
+      display: flex;
+    }
 
+    .content-title-before-after {
+      text-align: center;
+      h3 {
+        font-size: 16px;
+        text-align: center;
+        color: $dark-green;
+      }
+    }
 
- .content-before-after{
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-  >div{
-   display: flex;
+    .content-img-before-after {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      > img {
+        flex: 1;
+        max-width: 380px;
+        height: 370px;
+      }
+    }
   }
-
-  .content-title-before-after{
-   text-align: center;
-   h3{
-    font-size: 16px;
-    text-align: center;
-    color: $dark-green;
-   }
-  }
-
-  .content-img-before-after{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 30px;
-   >img{
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-   }
-  }
- }
- 
 }
