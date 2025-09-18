@@ -62,8 +62,8 @@ window.addEventListener("scroll", () => {
 
 // Slide touch - slide para dispositivos moveis no Touch --------------------------------------------------
 // controls
-let slider = cs(".slider--width");
-let slides = cs(".slider--item");
+let slider = c(".slider--width");
+let slides = c(".slider--item");
 let startX = 0;
 let endX = 0;
 let currentIndex = 0;
