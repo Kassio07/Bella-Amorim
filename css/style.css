@@ -511,7 +511,9 @@ header .hiro-content .hiro-img img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 100%;
   position: relative;
+  margin: 0 auto;
   height: auto;
   overflow: hidden;
 }
