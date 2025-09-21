@@ -43,6 +43,28 @@ function showSlider(containerSelector, autoPlay = true) {
   if (autoPlay && window.innerWidth > 768) {
     setInterval(goNext, 4000);
   }
+
+  // Slides deslizante - Mobil
+  if(window.innerWidth <= 768){
+    let startX = 0, endX = 0;
+
+    container.addEventListener("touchstart", (e)=>{
+      startX = e.touches[0].clientX;
+    },{passive: true});
+
+    container.addEventListener("touchend", (e)=>{
+      endX = e.changedTouches[0].clientX;
+      const delta = endX - startX;
+
+      if(Math.abs(delta) > 50){
+        if(delta < 0) goNext();
+        else goPrev();
+      }
+    },{passive:true});
+  }
+
+
+
   return { goNext, goPrev, vaPara };
 }
 
