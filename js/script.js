@@ -41,7 +41,7 @@ function showSlider(containerSelector, autoPlay = true) {
   prev.addEventListener("click", goPrev);
   // AutoPlay
   if (autoPlay && window.innerWidth > 768) {
-    setInterval(goNext, 3000);
+    setInterval(goNext, 4000);
   }
   return { goNext, goPrev, vaPara };
 }
