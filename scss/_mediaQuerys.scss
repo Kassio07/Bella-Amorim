@@ -36,6 +36,8 @@ section {
   // Hiro
   header {
     background-image: url("../images/imagem-hiro-fundo-mobil.webp");
+    background-repeat: no-repeat;
+
     .hiro-content {
       flex-direction: column;
       height: 100dvh;

@@ -59,7 +59,7 @@ header .logoTopo img {
   width: 60px;
 }
 header .logoTopo .destaqueHiro-fundo {
-  background-color: #fadbe3;
+  background-color: #FADBE3;
   display: none;
 }
 header .hiro-content {
@@ -123,7 +123,7 @@ header .hiro-content .hiro-img img {
 #before-after .content-before-after .content-title-before-after h3 {
   font-size: 16px;
   text-align: center;
-  color: #003c1a;
+  color: #003C1A;
 }
 #before-after .content-before-after .content-img-before-after {
   display: flex;
@@ -168,7 +168,7 @@ header .hiro-content .hiro-img img {
   padding-top: 20px;
 }
 #about .about-content .about-text .about-services ul li {
-  color: #003c1a;
+  color: #003C1A;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -182,7 +182,7 @@ header .hiro-content .hiro-img img {
   margin-top: 40px;
 }
 #about .about-content .about-text .about-services .btn-about > a {
-  background-color: #ac5e5e;
+  background-color: #AC5E5E;
   color: #fff;
   transition: all 0.5s;
 }
@@ -198,7 +198,7 @@ header .hiro-content .hiro-img img {
   gap: 10px;
 }
 #beneficios .beneficios-content .beneficios-card {
-  background-color: #fadbe3;
+  background-color: #FADBE3;
   width: 100%;
   max-width: 400px;
   padding: 30px 30px;
@@ -208,11 +208,11 @@ header .hiro-content .hiro-img img {
   gap: 5px;
 }
 #beneficios .beneficios-content .beneficios-card i {
-  color: #ac5e5e;
+  color: #AC5E5E;
   font-size: 18px;
 }
 #beneficios .beneficios-content .beneficios-card p {
-  color: #003c1a;
+  color: #003C1A;
   font-weight: 600;
   font-size: 14px;
 }
@@ -228,7 +228,7 @@ header .hiro-content .hiro-img img {
 #services .content-service .service-cards .service-card {
   display: flex;
   flex-direction: column;
-  background-color: #fadbe3;
+  background-color: #FADBE3;
   gap: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -238,10 +238,10 @@ header .hiro-content .hiro-img img {
 #services .content-service .service-cards .service-card h4 {
   text-align: center;
   font-size: 18px;
-  color: #003c1a;
+  color: #003C1A;
 }
 #services .content-service .service-cards .service-card p > i {
-  color: #ac5e5e;
+  color: #AC5E5E;
   font-size: 1.3rem;
 }
 
@@ -252,7 +252,7 @@ header .hiro-content .hiro-img img {
   padding: 70px 0;
 }
 #testemunhas .btn-about .btn-session {
-  background-color: #ac5e5e;
+  background-color: #AC5E5E;
   margin: 0 auto;
   color: #fff;
 }
@@ -282,7 +282,7 @@ header .hiro-content .hiro-img img {
 }
 #contact .content-contato .contact-box1 div > div > h4 > i {
   margin-right: 7px;
-  color: #003c1a;
+  color: #003C1A;
   font-size: 18px;
 }
 #contact .content-contato .contact-box1 .box1-row,
@@ -294,7 +294,7 @@ header .hiro-content .hiro-img img {
 }
 #contact .content-contato .contact-box1 .box1-row h4,
 #contact .content-contato .contact-box1 .box2-row h4 {
-  color: #ac5e5e;
+  color: #AC5E5E;
   font-weight: 700;
   font-size: 18px;
 }
@@ -308,13 +308,8 @@ header .hiro-content .hiro-img img {
 #contact .content-contato .contact-box1 .box1-row .box-text1 span {
   font-size: 14px;
 }
-#contact
-  .content-contato
-  .contact-box1
-  .box1-row
-  .box-text1
-  span:nth-child(even) {
-  color: #003c1a;
+#contact .content-contato .contact-box1 .box1-row .box-text1 span:nth-child(even) {
+  color: #003C1A;
   font-weight: 600;
   font-size: 14px;
 }
@@ -327,7 +322,7 @@ header .hiro-content .hiro-img img {
   font-size: 14px;
 }
 #contact .content-contato .contact-box1 .box1-row .box-text2 :last-child {
-  color: #003c1a;
+  color: #003C1A;
   font-size: 14px;
   font-weight: 700;
 }
@@ -340,15 +335,10 @@ header .hiro-content .hiro-img img {
   display: none;
 }
 #contact .content-contato .contact-box1 .box1-row .btn-about .btn-session {
-  background-color: #003c1a;
+  background-color: #003C1A;
   color: #fff;
 }
-#contact
-  .content-contato
-  .contact-box1
-  .box1-row
-  .btn-about
-  .btn-session:hover {
+#contact .content-contato .contact-box1 .box1-row .btn-about .btn-session:hover {
   background-color: rgb(23, 73, 23);
 }
 #contact .content-contato .contact-box1 .box2-row > div {
@@ -410,7 +400,7 @@ header .hiro-content .hiro-img img {
   text-transform: uppercase;
 }
 .division .content-division .division-col-1 h3 {
-  color: #fadbe3;
+  color: #FADBE3;
   text-transform: uppercase;
 }
 .division .content-division .division-col-2 {
@@ -422,7 +412,7 @@ header .hiro-content .hiro-img img {
 
 .btn-session {
   padding: 12px 30px;
-  background-color: #fadbe3;
+  background-color: #FADBE3;
   width: 100%;
   height: 50px;
   max-width: 350px;
@@ -432,7 +422,7 @@ header .hiro-content .hiro-img img {
   align-items: center;
   justify-content: center;
   transition: all 0.5s;
-  color: #ac5e5e;
+  color: #AC5E5E;
   font-weight: 700;
 }
 .btn-session i {
@@ -454,13 +444,13 @@ header .hiro-content .hiro-img img {
   align-items: center;
 }
 .title-session > div i {
-  color: #ac5e5e;
+  color: #AC5E5E;
   font-size: 1rem;
 }
 .title-session > div h2 {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
-  color: #003c1a;
+  color: #003C1A;
   position: relative;
   font-size: 18px;
 }
@@ -470,12 +460,12 @@ header .hiro-content .hiro-img img {
   bottom: -5px;
   width: 100%;
   height: 1px;
-  background-color: #e28d8a;
+  background-color: #E28D8A;
   border-radius: 15px;
 }
 .title-session h3 {
   font-size: 16px;
-  color: #003c1a;
+  color: #003C1A;
 }
 .title-session > p {
   text-align: start;
@@ -550,8 +540,7 @@ header .hiro-content .hiro-img img {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
-    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   padding: 15px;
   max-width: 350px;
   min-width: 320px;
@@ -564,7 +553,7 @@ header .hiro-content .hiro-img img {
   text-align: justify;
 }
 .slider-container .slider--width .slider--item .text-card i {
-  color: #ac5e5e;
+  color: #AC5E5E;
 }
 .slider-container .slider--width .slider--item .autor-card {
   display: flex;
@@ -665,19 +654,20 @@ section {
     padding: 0 18px;
   }
   .destaqueXG {
-    color: #e28d8a;
+    color: #E28D8A;
   }
   .destaqueG {
-    color: #fadbe3;
+    color: #FADBE3;
   }
   .destaqueTitle {
-    color: #003c1a;
+    color: #003C1A;
   }
   p {
     font-size: 1rem;
   }
   header {
     background-image: url("../images/imagem-hiro-fundo-mobil.webp");
+    background-repeat: no-repeat;
   }
   header .hiro-content {
     flex-direction: column;
@@ -731,7 +721,7 @@ section {
 @media (min-width: 577px) and (max-width: 767px) {
   .destaqueXG {
     font-size: 30px;
-    color: #e28d8a;
+    color: #E28D8A;
   }
   .destaqueTitle {
     font-size: 28px;
@@ -881,7 +871,7 @@ section {
     width: 80%;
     height: auto;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   #about .about-content .about-text {
     flex: 1;
@@ -954,15 +944,15 @@ section {
   }
   .destaqueXG {
     font-size: 38px;
-    color: #e28d8a;
+    color: #E28D8A;
   }
   .destaqueG {
     font-size: 32px;
-    color: #fadbe3;
+    color: #FADBE3;
   }
   .destaqueTitle {
     font-size: 28px;
-    color: #003c1a;
+    color: #003C1A;
   }
   header {
     gap: 0;
@@ -1048,15 +1038,15 @@ section {
   }
   .destaqueXG {
     font-size: 40px;
-    color: #e28d8a;
+    color: #E28D8A;
   }
   .destaqueG {
     font-size: 36px;
-    color: #fadbe3;
+    color: #FADBE3;
   }
   .destaqueTitle {
     font-size: 28px;
-    color: #003c1a;
+    color: #003C1A;
   }
   .division .content-division {
     align-items: center;
@@ -1089,15 +1079,15 @@ section {
   }
   .destaqueXG {
     font-size: 48px;
-    color: #e28d8a;
+    color: #E28D8A;
   }
   .destaqueG {
     font-size: 40px;
-    color: #fadbe3;
+    color: #FADBE3;
   }
   .destaqueTitle {
     font-size: 32px;
-    color: #003c1a;
+    color: #003C1A;
   }
   header .hiro-content .hiro-text h1 {
     font-size: 52px;
@@ -1143,20 +1133,20 @@ section {
 }
 
 .destaqueXG {
-  color: #e28d8a;
+  color: #E28D8A;
 }
 
 .destaqueG {
   font-size: 28px;
-  color: #fadbe3;
+  color: #FADBE3;
 }
 
 .destaqueTitle {
-  color: #003c1a;
+  color: #003C1A;
 }
 
 .green {
-  color: #003c1a;
+  color: #003C1A;
 }
 
 html {
@@ -1198,4 +1188,4 @@ img {
 
 strong {
   font-weight: 600;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
