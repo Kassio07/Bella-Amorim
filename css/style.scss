@@ -8,6 +8,7 @@
 // Arquivos de import
 @import "../scss/_color";
 @import "../scss/_fonts";
+@import "../scss/componente";
 @import "../scss/_hiro";
 @import "../scss/beforeAfter";
 @import "../scss/about";
@@ -15,10 +16,9 @@
 @import "../scss/services";
 @import "../scss/testemunhas";
 @import "../scss/contact";
-@import "../scss/componente";
 @import "../scss/footer";
-@import "../scss/_mediaQuerys";
 @import "../scss/destaque";
+@import "../scss/_mediaQuerys";
 
 // Scroll da página
 html {

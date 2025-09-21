@@ -40,6 +40,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .division {
+    background-image: url("../images/divisor-seccao-mobil.webp");
+  }
+}
+
 // Botão das seções ======================================================
 .btn-session {
   padding: 12px 30px;
