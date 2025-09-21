@@ -375,12 +375,11 @@ header .hiro-content .hiro-img img {
   padding-top: 20px;
 }
 #about .about-content .about-text .about-services ul li {
-  color: #003C1A;
-  font-weight: 500;
   font-size: 1.2rem;
 }
 #about .about-content .about-text .about-services ul li i {
-  margin-right: 5px;
+  color: #AC5E5E;
+  margin-right: 10px;
   font-size: 1.3rem;
 }
 #about .about-content .about-text .about-services .btn-about {
@@ -538,6 +537,19 @@ header .hiro-content .hiro-img img {
   color: rgba(0, 0, 255, 0.604);
   font-size: 16px;
   margin-right: 7px;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text2 span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text2 span > img {
+  width: 20px;
+  color: #003C1A;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text2 span a {
+  text-decoration: underline;
+  color: #666 !important;
 }
 #contact .content-contato .contact-box1 .box1-row .btn-about {
   display: none;
