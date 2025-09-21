@@ -79,6 +79,13 @@
 @media (max-width: 576px) {
   .division {
     background-image: url("../images/divisor-seccao-mobil.webp");
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .btn-session {
@@ -294,7 +301,7 @@ header .hiro-content .hiro-text .hiro-GroupIcons-img {
   margin-top: 30px;
 }
 header .hiro-content .hiro-text .hiro-GroupIcons-img > img {
-  width: 70px;
+  max-width: 70px;
 }
 header .hiro-content .hiro-img {
   display: flex;
@@ -334,8 +341,8 @@ header .hiro-content .hiro-img img {
 }
 #before-after .content-before-after .content-img-before-after > img {
   flex: 1;
-  max-width: 380px;
-  height: 370px;
+  max-width: 100%;
+  height: auto;
 }
 
 #about .about-content {
@@ -738,7 +745,7 @@ section {
     font-size: 14px;
   }
   #about .about-content .about-img img {
-    width: 100%;
+    margin: auto;
   }
   #about .about-content .about-text h2 {
     font-size: 28px;
@@ -787,7 +794,7 @@ section {
     justify-content: center;
   }
   .about-content .about-img img {
-    width: 100%;
+    margin: auto;
   }
   #before-after .content-before-after .content-title-before-after h3 {
     font-size: 18px;
@@ -900,8 +907,6 @@ section {
     flex: 1;
   }
   #about .about-content .about-img > img {
-    width: 80%;
-    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1186,7 +1191,7 @@ li {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }

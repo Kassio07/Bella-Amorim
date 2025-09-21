@@ -43,6 +43,14 @@
 @media (max-width: 576px) {
   .division {
     background-image: url("../images/divisor-seccao-mobil.webp");
+    background-size: cover;
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

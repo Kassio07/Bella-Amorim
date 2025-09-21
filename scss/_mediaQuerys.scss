@@ -85,7 +85,7 @@ section {
     .about-content {
       .about-img {
         img {
-          width: 100%;
+          margin: auto;
         }
       }
       .about-text {
@@ -175,7 +175,7 @@ section {
   .about-content {
     .about-img {
       img {
-        width: 100%;
+        margin: auto;
       }
     }
   }
@@ -339,8 +339,6 @@ section {
       .about-img {
         flex: 1;
         > img {
-          width: 80%;
-          height: auto;
           object-fit: cover;
         }
       }
