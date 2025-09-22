@@ -45,25 +45,32 @@ function showSlider(containerSelector, autoPlay = true) {
   }
 
   // Slides deslizante - Mobil
-  if(window.innerWidth <= 768){
-    let startX = 0, endX = 0;
+  if (window.innerWidth <= 768) {
+    let startX = 0,
+      endX = 0;
 
-    container.addEventListener("touchstart", (e)=>{
-      startX = e.touches[0].clientX;
-    },{passive: true});
+    container.addEventListener(
+      "touchstart",
+      (e) => {
+        startX = e.touches[0].clientX;
+      },
+      { passive: true }
+    );
 
-    container.addEventListener("touchend", (e)=>{
-      endX = e.changedTouches[0].clientX;
-      const delta = endX - startX;
+    container.addEventListener(
+      "touchend",
+      (e) => {
+        endX = e.changedTouches[0].clientX;
+        const delta = endX - startX;
 
-      if(Math.abs(delta) > 50){
-        if(delta < 0) goNext();
-        else goPrev();
-      }
-    },{passive:true});
+        if (Math.abs(delta) > 50) {
+          if (delta < 0) goNext();
+          else goPrev();
+        }
+      },
+      { passive: true }
+    );
   }
-
-
 
   return { goNext, goPrev, vaPara };
 }
@@ -72,8 +79,7 @@ function showSlider(containerSelector, autoPlay = true) {
 showSlider(".slider-container");
 showSlider(".slider-container.two");
 
-
-// Arrow up to - Btn de voltar ao topo do site 
+// Arrow up to - Btn de voltar ao topo do site
 const arrow = c(".arrow-to");
 window.addEventListener("scroll", () => {
   // Esconde a seta no topo da página
@@ -89,4 +95,13 @@ arrow.addEventListener("click", () => {
     top: 0,
     behavior: "smooth",
   });
+});
+
+// Carregar o CDN do bootstrap
+window.addEventListener("load", function () {
+  var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href =
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css";
+  document.head.appendChild(link);
 });
