@@ -75,6 +75,14 @@
   display: flex;
   justify-content: center;
 }
+.division .content-division .division-col-2 a {
+  display: flex;
+  gap: 10px;
+}
+.division .content-division .division-col-2 a img {
+  width: 20px;
+  display: block;
+}
 
 @media (max-width: 576px) {
   .division {
@@ -103,9 +111,9 @@
   color: #AC5E5E;
   font-weight: 700;
 }
-.btn-session i {
-  font-size: 1.5rem;
+.btn-session svg {
   padding-left: 5px;
+  width: 25px;
 }
 .btn-session:hover {
   background-color: #f6f2f3;
@@ -120,8 +128,9 @@
 .title-session > div {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
-.title-session > div i {
+.title-session > div svg {
   color: #AC5E5E;
   font-size: 1rem;
 }
@@ -377,7 +386,7 @@ header .hiro-content .hiro-img img {
 #about .about-content .about-text .about-services ul li {
   font-size: 1.2rem;
 }
-#about .about-content .about-text .about-services ul li i {
+#about .about-content .about-text .about-services ul li svg {
   color: #AC5E5E;
   margin-right: 10px;
   font-size: 1.3rem;
@@ -411,9 +420,9 @@ header .hiro-content .hiro-img img {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
-#beneficios .beneficios-content .beneficios-card i {
+#beneficios .beneficios-content .beneficios-card svg {
   color: #AC5E5E;
   font-size: 18px;
 }
@@ -505,12 +514,18 @@ header .hiro-content .hiro-img img {
   font-weight: 700;
   font-size: 18px;
 }
+#contact .content-contato .contact-box1 .box1-row h4 {
+  gap: 10px;
+}
 #contact .content-contato .contact-box1 .box1-row > div {
   gap: 10px;
 }
 #contact .content-contato .contact-box1 .box1-row .box-text1 {
   display: flex;
   flex-direction: column;
+}
+#contact .content-contato .contact-box1 .box1-row .box-text1 svg {
+  color: #003C1A;
 }
 #contact .content-contato .contact-box1 .box1-row .box-text1 span {
   font-size: 14px;
@@ -560,6 +575,12 @@ header .hiro-content .hiro-img img {
 }
 #contact .content-contato .contact-box1 .box1-row .btn-about .btn-session:hover {
   background-color: rgb(23, 73, 23);
+}
+#contact .content-contato .contact-box1 .box2-row h4 {
+  gap: 10px;
+}
+#contact .content-contato .contact-box1 .box2-row svg {
+  color: #003C1A;
 }
 #contact .content-contato .contact-box1 .box2-row > div {
   display: flex;
