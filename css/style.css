@@ -315,9 +315,15 @@ header .hiro-content .hiro-text .hiro-GroupIcons-img > img {
 header .hiro-content .hiro-img {
   display: flex;
 }
-header .hiro-content .hiro-img img {
+header .hiro-content .hiro-img picture {
   max-width: 100%;
   height: auto;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+header .hiro-content .hiro-img picture img {
+  max-width: 100%;
   position: relative;
 }
 

@@ -35,7 +35,7 @@ header {
       height: 100%;
       flex: 1;
 
-      h1{
+      h1 {
         text-transform: uppercase;
       }
       p {
@@ -45,12 +45,12 @@ header {
       > span {
         font-size: 16px;
       }
-      .hiro-GroupIcons-img{
+      .hiro-GroupIcons-img {
         display: flex;
         flex-direction: row;
         gap: 5px;
         margin-top: 30px;
-        >img{
+        > img {
           max-width: 70px;
         }
       }
@@ -58,10 +58,16 @@ header {
 
     .hiro-img {
       display: flex;
-      img {
+      picture {
         max-width: 100%;
         height: auto;
         position: relative;
+        display: flex;
+        align-items: flex-end;
+        img{
+         max-width: 100%;
+        position: relative;
+        }
       }
     }
   }
