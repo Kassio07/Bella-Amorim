@@ -59,7 +59,7 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  
+
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -196,8 +196,32 @@
       #hiro {
         background-color: #fef9f1;
       }
+
+      @media (max-width: 576px) {
+        header {
+          background-image: url("../images/imagem-hiro-fundo-mobil.webp");
+          background-repeat: no-repeat;
+        }
+        .hiro-content {
+          flex-direction: column;
+          height: 100dvh;
+        }
+        .hiro-text {
+          justify-content: flex-start;
+        }
+        .hiro-text > span {
+          font-size: 12px;
+        }
+        .hiro-text h1 {
+          font-size: 32px;
+        }
+        .hiro-img {
+          width: 100%;
+          position: relative;
+        }
+      }
     </style>
-      <!-- CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
