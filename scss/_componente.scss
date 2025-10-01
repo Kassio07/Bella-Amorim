@@ -61,6 +61,13 @@
     justify-content: space-between;
     align-items: center;
   }
+  .slider-container{
+    .slider--width{
+      gap: 0 !important;
+      padding: 40px 3px !important;
+    }
+
+  }
 }
 
 // Botão das seções ======================================================
@@ -182,6 +189,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
   max-width: 100%;
   position: relative;
   margin: 0 auto;
@@ -201,13 +209,15 @@
   }
   .slider--width {
     display: flex;
+    transition: transform 1.4s ease;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
     padding: 40px 10px;
-    transition: transform 1.4s ease;
     .slider--item {
-      display: flex;
+       flex: 0 0 100%;
+       display: flex;
+       justify-content: start;
       flex-direction: column;
       gap: 30px;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
@@ -238,5 +248,20 @@
         }
       }
     }
+  }
+}
+
+
+/* Tablet: 2 slides visíveis */
+@media (min-width: 600px) {
+  .slider--item {
+    flex: 0 0 50%;
+  }
+}
+
+/* Desktop: 3 slides visíveis */
+@media (min-width: 992px) {
+  .slider--item {
+    flex: 0 0 33.33%;
   }
 }
