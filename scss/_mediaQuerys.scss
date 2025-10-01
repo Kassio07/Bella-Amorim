@@ -147,8 +147,9 @@ section {
         padding-bottom: 40px;
       }
       .hiro-img {
+        margin: 0 auto;
         img {
-          width: 85%;
+          width: 400px;
         }
       }
     }
@@ -302,8 +303,10 @@ section {
         justify-content: center;
         width: 100%;
         flex: 1;
-        > img {
-          width: 60%;
+        picture{
+          > img {
+            width: 345px;
+          }
         }
       }
       .hiro-GroupIcons-img {
@@ -486,9 +489,11 @@ section {
         }
       }
       .hiro-img {
-        > img {
-          width: 100%;
-          align-self: flex-end;
+        picture{
+          > img {
+            width: 100%;
+            align-self: flex-end;
+          }
         }
       }
     }

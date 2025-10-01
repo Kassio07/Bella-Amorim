@@ -20,7 +20,7 @@ function showSlider(containerSelector, autoPlay = true) {
   let width_slide = slides_item[0].clientWidth;
   // Lógica do slide
   function vaPara(index) {
-    if (index <= 0) {
+    if (index < 0) {
       index = slides_item.length - 1;
     }
     if (index >= slides_item.length) index = 0;
@@ -80,7 +80,7 @@ showSlider(".slider-container");
 showSlider(".slider-container.two");
 
 // Arrow up to - Btn de voltar ao topo do site
-const arrow = c(".arrow-to");
+let arrow = c(".arrow-to");
 window.addEventListener("scroll", () => {
   // Esconde a seta no topo da página
   if (window.scrollY > 700) {

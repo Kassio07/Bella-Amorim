@@ -6,6 +6,20 @@
         text-align: center;
       }
     }
+
+    .slider-container.two{
+      >.slider--width{
+        >.slider--item{
+          .star{
+            display: flex;
+            gap: 3px;
+            >img{
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
   }
   .btn-about{
     padding: 70px 0;

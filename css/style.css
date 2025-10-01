@@ -188,9 +188,11 @@
   right: 90px;
   cursor: pointer;
   display: none;
+  width: 30px;
+  height: 30px;
+  z-index: 99999;
 }
-.arrow-to i {
-  font-size: 30px;
+.arrow-to svg {
   color: #666;
 }
 
@@ -230,7 +232,7 @@
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   padding: 15px;
   max-width: 350px;
-  min-width: 320px;
+  min-width: 311px;
   height: inherit;
 }
 .slider-container .slider--width .slider--item .star {
@@ -469,6 +471,13 @@ header .hiro-content .hiro-img picture img {
 
 #testemunhas .content-testemunhas .title-session > h3 {
   text-align: center;
+}
+#testemunhas .content-testemunhas .slider-container.two > .slider--width > .slider--item .star {
+  display: flex;
+  gap: 3px;
+}
+#testemunhas .content-testemunhas .slider-container.two > .slider--width > .slider--item .star > img {
+  width: 20px;
 }
 #testemunhas .btn-about {
   padding: 70px 0;
@@ -818,8 +827,11 @@ section {
   header .hiro-content .hiro-text {
     padding-bottom: 40px;
   }
+  header .hiro-content .hiro-img {
+    margin: 0 auto;
+  }
   header .hiro-content .hiro-img img {
-    width: 85%;
+    width: 400px;
   }
   .division .content-division .division-col-1 > p {
     font-size: 11px;
@@ -920,8 +932,8 @@ section {
     width: 100%;
     flex: 1;
   }
-  header .hiro-content .hiro-img > img {
-    width: 60%;
+  header .hiro-content .hiro-img picture > img {
+    width: 345px;
   }
   header .hiro-content .hiro-GroupIcons-img > img {
     width: 80px !important;
@@ -1046,7 +1058,7 @@ section {
   header .hiro-content .hiro-text p {
     font-size: 18px;
   }
-  header .hiro-content .hiro-img > img {
+  header .hiro-content .hiro-img picture > img {
     width: 100%;
     align-self: flex-end;
   }
